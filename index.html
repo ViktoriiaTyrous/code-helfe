@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices.min.css"
+/>
+    <link rel="stylesheet" href="css/style.css">
+
+ <title>Code Helfer</title>
+</head>
+<body>
+    <a href="#head"><img src="./images/contact.svg " id="fixedbutton"  onclick="showPopup()"></a>
+    <header class="header">
+        <div class="header__container">
+         <nav class="navigation">
+            <a class="header__logo">
+                <img src="./images/logo.svg" alt="" class="logo-img">
+            </a>
+            <div class="menu-body">
+            <ul class="list">
+                <li class="list__item">
+                    <a href="#" class="item__link active">Home</a>
+                </li>
+                <li class="list__item">
+                    <a href="#" class="item__link">Design & Webentwicklung</a>
+                </li>
+                <li class="list__item">
+                    <a href="#" class="item__link">Data Science & Machine Learning</a>
+                </li>
+                <li class="list__item">
+                    <a href="#" class="item__link">Web Scraping</a>
+                </li>
+            </ul>
+        </div>
+            <button class="burger" type="button">
+                <span></span>
+            </button>
+         </nav>
+        </div>
+    </header>
+   <main>
+        <section>
+            <div class="main-scrin">
+                <div id="popup" display = "none">
+                    <div class="popup-wrap">
+                        <button id="close-button"><img src="./images/pop-close.svg" alt="" srcset=""></button>
+                        <h2 class="form__block__title title" id="contact">Lass uns zusammen arbeiten</h2>
+                        <form class="form" action="" onsubmit="return validateFormPop()">
+                        <label for="name">Vollständiger Name*</label>
+                        <input class="input name" type="text" id="namePop" placeholder="Name">
+                        <div class="name-error-pop error"></div>
+                        <label for="phone">Nummer*</label>
+                        <input class="input phone" id="phonePop" type="tel" placeholder="+49 179 5959 595">
+                        <div class="phone-error-pop error"></div>
+                        <label for="email">E-Mail*</label>
+                        <input class="input email" id="emailPop" type="email" placeholder="example@mail.de">
+                        <div class="email-error-pop error"></div>
+                        <label for="comment">Kommentar</label>
+                        <input class="input comment" type="text" id="comment" placeholder="Ihr Kommentar...">
+                        <button class="button-form-pop button" type="submit">Schicken</button>
+                      </form>
+                  </div>
+                </div>
+                <div class="container">  
+                    <h1 class="main__title">Kleine Änderungen – große Ergebnisse</h1>
+                    <div class="main__buttons">
+                        <button class="buttons__btn-contact" onclick="showPopup()"> <a>Kontaktiere uns</a></button>
+                        <a href="" class="buttons__btn-video-wrap"> 
+                             <button class="buttons__btn-video">Video abspielen</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="services-block">
+                <div class="container">
+                    <h2 class="services-block__title title">Unsere Dienstleistungen</h2>
+
+                    <div class="services-contant">
+                        <div class="circle"></div>
+                        <a href="" class="service__item-wrap"> 
+                            <div href="" class="service__item">
+                            <img class="service__item-img" src="/images/design.svg" alt="">
+                            </div>
+                        <p class="service__item-title">
+                            Design & Webentwicklung
+                        </p>
+                    </a>
+                    <a href="" id="science" class="service__item-wrap"> 
+                        <div href="" class="service__item">
+                        <img class="service__item-img" src="/images/data-icon.svg" alt="">
+                        </div>
+                    <p class="service__item-title">
+                        Data Science & <br> Machine Learning
+                    </p>
+                </a>
+                <a href="" id="scraping" class="service__item-wrap"> 
+                    <div href="" class="service__item">
+                    <img class="service__item-img" src="/images/scraping.svg" alt="">
+                    </div>
+                <p class="service__item-title">
+                    Web Scraping
+                </p>
+            </a>
+               <a href="" id="personal" class="service__item-wrap"> 
+                            <div href="" class="service__item">
+                            <img class="service__item-img" src="/images/personalization.svg" alt="">
+                            </div>
+                        <p class="service__item-title">
+                            Maßgeschneiderte Lösungen
+                        </p>
+                    </a>
+                    <img id="cat" src="/images/cat-serv.gif">
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+       
+      <section>
+            <div class="projects-block">
+                <div class="container">
+                    <h2 class="projects-block__title title">Projekte</h2>
+                </div>
+                <div class="line-bg"></div>
+                <div class="projects-block__tabs">
+                    <div class="container"> 
+                         <select id="project-category" class="js-choice">
+                        <option class="select-item" value="design-web">Design & Webentwicklung</option>
+                        <option class="select-item" value="data-science">Data Science & Machine Learning</option>
+                        <option class="select-item" value="web-scraping">Web Scraping</option>
+                         </select>
+                    </div>
+                    <div class="projects-block__tabs__container">
+                       <button class="tab-btn active">Design &  Webentwicklung</button>
+                       <button class="tab-btn">Data Science & Machine Learning</button>
+                       <button class="tab-btn">Web Scraping</button>
+                       <div class="line"></div>
+                    </div>
+                    <div class="content-box active" id="design-web">
+                        <div class="container swiper mySwiper_2">
+                            <div class="swiper-wrapper">
+                                <div class="project swiper-slide">
+                                    <div class="project-content">
+                                        <h3 class="project-content__title">Erweiterung der Funktionalität </h3>
+                                        <div class="project-wrapper">
+                                            <div class="project-content__image animation" id="lottie_1">
+                                                <span>Vor</span>
+                                        </div>
+                                        <div class="project-content__image animation" id="lottie_2">
+                                            <span>Nach</span>
+                                        </div>
+                                        </div>
+                                        <div class="project-text">
+                                            Die Website des Unternehmens war schon recht frisch, hatte aber einige Probleme: Ladezeit und Userfreundlichkeit. Optimierung von Bildern & Code halbierte die Ladezeit und steigerte die Konversionsrate um 35%. Die Entwicklung der mobilen Version fuhr zur Erhöhung der Konversionsrate um 40%.</div>
+                                    </div>
+                                </div>
+                                <div class="project swiper-slide">
+                                    <div class="project-content">
+                                        <h3 class="project-content__title">Redesign </h3>
+                                        <div class="project-wrapper">
+                                            <div class="project-content__image animation" id="lottie_3">
+                                                <span>Vor</span>
+                                        </div>
+                                        <div class="project-content__image animation" id="lottie_9">
+                                            <span>Nach</span>
+                                        </div>
+                                        </div>
+                                        <div class="project-text">
+                                            Die Website des Unternehmens war schon recht frisch, hatte aber einige Probleme: Ladezeit und Userfreundlichkeit. Optimierung von Bildern & Code halbierte die Ladezeit und steigerte die Konversionsrate um 35%. Die Entwicklung der mobilen Version fuhr zur Erhöhung der Konversionsrate um 40%.</div>
+                                    </div>
+                                </div>
+                                <div class="project swiper-slide">
+                                    <div class="project-content">
+                                        <h3 class="project-content__title">Entwicklung</h3>
+                                        <div class="project-wrapper">
+                                            <div class="project-content__image animation">
+                                                <img src="./images/wareframe.png" alt="">
+                                                <span>Vor</span>
+                                        </div>
+                                        <div class="project-content__image animation" id="lottie_6">
+                                            <span>Nach</span>
+                                        </div>
+                                        </div>
+                                        <div class="project-text">
+                                            Zwei Mädchen eröffneten ein Café mit selbstgemachten Kuchen, Muffins und Süßigkeiten. Dank der Entwicklung einer Webseite und richtig konfigurierten CMM-Werbung stiegen die Besucherzahlen um 30% im ersten Monat. Durch Online-Bestellungen machten die beiden 60% des Umsatzes. Wir ihre auf Papier gemalten Wünsche in folgende Webseite verwirklichen.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-buttons">   
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                         
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <div class="content-box" id="data-science">
+                        <div class="container">
+                            <div class="swiper-wrapper">
+                                <div class="project swiper-slide">
+                                    <div class="project-content">
+                                        <h3 class="project-content__title">Wettbewerbsanalyse</h3>
+                                        <div class="project-wrapper">
+                                            <div class="project-content__image animation" id="lottie_3">
+                                                <img src="./images/silpo.png" alt="" srcset="">
+                                                <span>Vor</span>
+                                        </div>
+                                        <div class="project-content__image animation" id="lottie_4">
+                                            <img src="./images/silpo_2.png" alt="" srcset="">
+                                            <span>Nach</span>
+                                        </div>
+                                        </div>
+                                        <div class="project-text">
+                                            Ein Unternehmen aus der Lebensmittelbranche benötigt stets aktuelle Preisinformationen von Wettbewerbern, um eigene Markt angemessene Preise zu setzen. Dank der Entwicklung eines Webscraping-Programms können wir das Unternehmen nun jederzeit mit aktuellen Wettbewerberdaten versorgen. Dies spart Zeit, Geld und Ressourcen, die zuvor für manuelles Scannen aufgewendet werden mussten, und erhöht somit die Effizienz.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-box" id="web-scraping">
+                        <div class="container">
+                            <div class="swiper-wrapper">
+                                <div class="project swiper-slide">
+                                    <div class="project-content">
+                                        <h3 class="project-content__title">Automatisierung</h3>
+                                        <div class="project-wrapper">
+                                            <div class="project-content__image animation" id="lottie_5">
+                                                <img src="./images/china_1.png" alt="" srcset="">
+                                                <span>Vor</span>
+                                        </div>
+                                        <div class="project-content__image animation" id="lottie_6">
+                                            <img src="./images/e-com 2.png" alt="">
+                                            <span>Nach</span>
+                                        </div>
+                                        </div>
+                                        <div class="project-text">
+                                            Ein E-Commerce-Unternehmen kauft Waren in China ein und verkauft sie in Europa. Da die Auswahl an möglichen Waren groß ist und das Unternehmen großen Wert auf Kundenzufriedenheit und Qualität legt, haben wir ein Web-Scraping-Programm geschrieben, das Kundenkommentare und Bewertungen sammelt. Später entwickelten wir auch ein Data-Science-Programm, das die Kommentare nutzt, um Produkte zu klassifizieren und Empfehlungen abzugeben, ob ein bestimmtes Produkt kaufenswert ist (erfahren Sie mehr über unseren <a href="">Data Science</a> Bereich). Beide Schritte führten zu mehr Umsatz, höheren Gewinnen und zufriedeneren Kunden.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> 
+        <section>
+            <div class="about-block">
+                <div class="container about-container">
+                    <div class="about-circle">  
+                        <div class="statistic" id="projects">
+                        <div class="statistic__number">80+</div>
+                        <div class="statistic__description">Abgeschlossene Projekte</div>
+                    </div>
+                    <div class="statistic" id="persent">
+                        <div class="statistic__number" >20%</div>
+                        <div class="statistic__description">Gestiegener <br> Umsatz</div>
+                    </div>
+                    <div class="statistic" id="rating">
+                        <div class="statistic__number">9,6☆</div>
+                        <div class="statistic__description">Durchschnittliche Projektbewertun</div>
+                    </div></div>
+                  
+                                 <div class="about-content__wrap"> 
+                                <h2 class="about-content__title title">Über uns</h2>
+                                <p class="about-content__text">
+                                    Unser Unternehmen (Code-Helfer) wurde vor drei Jahren von einer Gruppe von IT-Spezialisten aus verschiedenen IT-Bereichen gegründet. Seitdem haben wir uns darauf konzentriert, unseren Kunden erstklassige IT-Lösungen anzubieten, die ihren Anforderungen entsprechen. <br>
+                                    <br>
+                                    Unser erfahrenes Team von Entwicklern, Designern und Data-Science-Experten arbeitet eng mit unseren Kunden zusammen, um sicherzustellen, dass wir ihre Erwartungen erfüllen. Wir sind stolz darauf, dass wir in der Lage sind, komplexe IT-Probleme zu lösen und maßgeschneiderte Lösungen für jeden unserer Kunden zu entwickeln. <br>
+                                    <br>
+                                    Unsere Prinzipien sind Vertrauen, Fairness, Schnelligkeit, Qualität und Partnerschaft.
+                                    Wir möchten sicherstellen, dass Sie nicht wochen- oder monatelang auf das Ergebnis Ihres Auftrags warten müssen, wenn wir ihn in wenigen Tagen qualitativ hochwertig erledigen können. Wir schätzen unsere eigene Zeit und die Zeit unserer Kunden gleichermaßen und unser Ziel ist es, das Problem des Kunden schnell und effektiv zu lösen. 
+                                    <span id="dots">...</span> <br>
+
+                                    <span id="more"> Ob es darum geht, Mehrwert aus Daten zu gewinnen, eine Webseite mit einem einzigartigen Design zu erstellen, wertvolle Wettbewerbsdaten zu erhalten oder Serverkosten zu minimieren - wir sind gerne bereit, unseren Partnern bei der Erreichung ihrer Ziele zu helfen. <br>
+                                        <br>
+                                        Wir sind keine Dienstleister, wir sind ein IT-Team, das Ihnen gerne hilft, ihre Ideen zu verwirklichen.
+                                        Unser Team hat auch ein Team von Outsource-Spezialisten in der Ukraine, die uns bei Bedarf unterstützen. Wir haben diese Partnerschaft geschaffen, um sicherzustellen, dass wir unseren Kunden auch bei komplexen Projekten umfassende Lösungen anbieten können. <br>
+                                        
+                                
+                                </p>
+                                <button onclick="myFunction()" id="myBtn" class="offset-md-3">Weiterlesen</button>
+                            
+                            </div>
+                    </div> 
+                    </div>      
+        </section>
+        
+   <section>
+        <div class="team">
+ <div class="container">
+    <h2 class="team__title title">Unser team</h2>
+ </div>
+            <div class="container swiper mySwiper_1" keyboard="true" mousewheel="true">
+                <div class="team__contant swiper-wrapper">
+                    <div class="card swiper-slide">
+                        <div class="card-content">
+                            <div class="card-content__image">
+                                <img src="./images/worker.jpg" alt="">
+                                <h4 class="card-content__name">Name of worker</h4>
+                                <span class="card-content__profession">profession</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="card-content">
+                            <div class="card-content__image">
+                                <img src="./images/worker_2.jpg" alt="">
+                                <h4 class="card-content__name">Name of worker</h4>
+                                <span class="card-content__profession">profession</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="card-content">
+                            <div class="card-content__image">
+                                <img src="./images/worker_3.jpg" alt="">
+                                <h4 class="card-content__name">Name of worker</h4>
+                                <span class="card-content__profession">profession</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="card-content">
+                            <div class="card-content__image">
+                                <img src="./images/worker.jpg" alt="">
+                                <h4 class="card-content__name">Name of worker</h4>
+                                <span class="card-content__profession">profession</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="card-content">
+                            <div class="card-content__image">
+                                <img src="./images/worker.jpg" alt="">
+                                <h4 class="card-content__name">Name of worker</h4>
+                                <span class="card-content__profession">profession</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="card-content">
+                            <div class="card-content__image">
+                                <img src="./images/worker.jpg" alt="">
+                                <h4 class="card-content__name">Name of worker</h4>
+                                <span class="card-content__profession">profession</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="card-content">
+                            <div class="card-content__image">
+                                <img src="./images/worker.jpg" alt="">
+                                <h4 class="card-content__name">Name of worker</h4>
+                                <span class="card-content__profession">profession</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="card-content">
+                            <div class="card-content__image">
+                                <img src="./images/worker.jpg" alt="">
+                                <h4 class="card-content__name">Name of worker</h4>
+                                <span class="card-content__profession">profession</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="card-content">
+                            <div class="card-content__image">
+                                <img src="./images/worker.jpg" alt="">
+                                <h4 class="card-content__name">Name of worker</h4>
+                                <span class="card-content__profession">profession</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-buttons">   
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+             
+                <div class="swiper-pagination"></div>
+               
+            </div>
+        </div> 
+
+    </section>
+    <section>
+        <div class="form__block">
+            <div class="container">
+                <div class="form__block-wrapper">
+               <div class="form__image"> 
+                    <img id="cat-form" src="./images/cat-form.gif" alt=""> 
+                </div> 
+                <form class="form" action="" onsubmit="return validateForm()">
+                    <h2 class="form__block__title title" id="contact">Lass uns zusammen arbeiten</h2>
+                    <label for="name">Vollständiger Name*</label>
+                    <input class="input name" type="text" id="name" placeholder="Name">
+                    <div class="name-error error"></div>
+                    <label for="phone">Nummer*</label>
+                    <input class="input phone" id="phone" type="tel" placeholder="+49 179 5959 595">
+                    <div class="phone-error error"></div>
+                    <label for="email">E-Mail*</label>
+                    <input class="input email" id="email" type="email" placeholder="example@mail.de">
+                    <div class="email-error error"></div>
+                    <label for="comment">Kommentar</label>
+                    <input class="input comment" type="text" id="comment" placeholder="Ihr Kommentar...">
+                    <button class="button-form button" type="submit">Schicken</button>
+                  </form>
+            </div>
+            </div>
+        </div>
+     </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-contant">
+                <div class="footer__information">
+                    <a href="#" class="footer__logo">
+                        <img src="./images/logo.svg" alt="" srcset="">
+                    </a>
+                    <ul class="footer__sosial-list"> 
+                        <li class="menu-list"><a href="#" class="menu-list__link"><img src="./images/phone.svg" alt="" class="icon"> +49 (178) 198 60 35</a></li>
+                        <li class="menu-list"><a href="#" class="menu-list__link"><img src="./images/email.svg" alt="" class="icon"> info@code-helfer.de</a></li>
+                        <li class="menu-list"><a href="#" class="menu-list__link"><img src="./images/location.svg" alt="" class="icon"> Schillerstr. 50, Heilbronn, 74072</a></li>
+                        </ul>
+                    </div>
+                   
+                <div class="footer__menu">
+                    <h5>Menu</h5>
+                    <ul class="footer__munu-list"> 
+                        <li class="menu-list"><a href="#" class="menu-list__link">Home</a></li>
+                        <li class="menu-list"><a href="#" class="menu-list__link">Design & Webentwicklung</a></li>
+                        <li class="menu-list"><a href="#" class="menu-list__link">Data Science & Machine Learning</a></li>
+                        <li class="menu-list"><a href="#" class="menu-list__link">Web Scraping</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__sosial">
+                    <h5>Sosial</h5>
+                    <ul class="footer__menu-list"> 
+                        <li class="menu-list"><a href="#" class="menu-list__link"> <img src="./images/linkedin.svg" alt="" class="icon"> Linkedin</a></li>
+                        <li class="menu-list"><a href="#" class="menu-list__link"> <img src="./images/github.svg" alt="" class="icon"> HitHub</a></li>
+                        <li class="menu-list"><a href="#" class="menu-list__link"> <img src="./images/behance.svg" alt="" class="icon"> Behance</a></li>
+                    </ul>
+                   
+                </div>
+            </div>
+        </div>
+    </footer> 
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="code/lottie.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/scripts/choices.min.js"></script>
+   <script src="code/script.js"></script> 
+</body>
+</html>
