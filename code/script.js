@@ -13,6 +13,7 @@ btn.addEventListener("click", function() {
     moreText.style.display = "inline";
   }
 });
+console.log(btn)
 
 let popup = document.getElementById("popup");
 let closeButton = document.getElementById("close-button");
