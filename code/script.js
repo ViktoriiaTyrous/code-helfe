@@ -1,4 +1,18 @@
+const btn = document.getElementById("myBtn");
+btn.addEventListener("click", function() {
+  const dots = document.getElementById("dots");
+  const moreText = document.getElementById("more");
 
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btn.innerHTML = "Weiterlesen";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btn.innerHTML = "Aufrollen";
+    moreText.style.display = "inline";
+  }
+});
 
 let popup = document.getElementById("popup");
 let closeButton = document.getElementById("close-button");
@@ -56,44 +70,8 @@ anim.loadAnimation ({
     autoplay: true,
     path: './animation/sota_001.json'
 })
-// anim.loadAnimation ({
-//     container: document.querySelector('#lottie-test6'),
-//     render: 'svg',
-//     loop: true,
-//     autoplay: true,
-//     path: './animation/data.json'
-// })
 
-// anim.loadAnimation ({
-//     container: document.querySelector('#lottie-test7'),
-//     render: 'svg',
-//     loop: true,
-//     autoplay: true,
-//     path: './animation/01.json'
-// })
-// anim.loadAnimation ({
-//     container: document.querySelector('#lottie-test8'),
-//     render: 'svg',
-//     loop: true,
-//     autoplay: true,
-//     path: './animation/data.json'
-// })
 
-function myFunction() {
-    var dots = document.getElementById("dots");
-    var moreText = document.getElementById("more");
-    var btnText = document.getElementById("myBtn");
-  
-    if (dots.style.display === "none") {
-      dots.style.display = "inline";
-      btnText.innerHTML = "Weiterlesen";
-      moreText.style.display = "none";
-    } else {
-      dots.style.display = "none";
-      btnText.innerHTML = "Aufrollen";
-      moreText.style.display = "inline";
-    }
-  }
 
 
     var swiper = new Swiper(".mySwiper_1", {
