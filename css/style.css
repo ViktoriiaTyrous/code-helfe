@@ -20,6 +20,9 @@ a {
   bottom: 20px;
   right: 20px;
   z-index: 20;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
  
 }
 
@@ -234,15 +237,16 @@ position: relative;
   font-weight: 700;
   border: none;
   font-size: 16px;
+  line-height: 30px;
   font-family: "Gilroy";
   transition: background-color 0.3s ease;
   display: block;
   cursor: pointer;
 }
 
-/* .buttons__btn-contact:hover, .button-form:hover{
+.buttons__btn-contact:hover, .button-form:hover, #fixedbutton:hover{
     background-color: #F3963C;
-} */
+}
 
 .main__title {
   font-family: Gilroy, sans-serif;
