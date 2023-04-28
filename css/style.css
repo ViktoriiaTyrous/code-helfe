@@ -1699,5 +1699,5 @@ max-width: 100%;
 
 .design-services-block__title {
   padding-top: 100px;
-  text-align: right;
+  margin-left: auto;
 }
