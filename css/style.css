@@ -179,13 +179,18 @@ body.popup-open {
 
 /*************************MAIN******************/
 
-.main-scrin {
+.main-scrin, .main-scrin-design  {
   width: 100vw;
   background-image: url("../images/main.jpg");
   height: calc(100vh - 150px);
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.main-scrin-design {
+  background-image: url("/images/main-design.jpg");
+}
+
 .main__buttons {
   margin-top: 42px;
   display: flex;

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices.min.css"
+/>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.svg">
+    <title>Design und Webentwicklung</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+         <nav class="navigation">
+            <a class="header__logo">
+                <img src="/images/logo.svg" alt="" class="logo-img">
+            </a>
+            <div class="menu-body">
+            <ul class="list">
+                <li class="list__item">
+                    <a href="#" class="item__link active">Home</a>
+                </li>
+                <li class="list__item">
+                    <a href="#" class="item__link">Design & Webentwicklung</a>
+                </li>
+                <li class="list__item">
+                    <a href="#" class="item__link">Data Science & Machine Learning</a>
+                </li>
+                <li class="list__item">
+                    <a href="#" class="item__link">Web Scraping</a>
+                </li>
+            </ul>
+        </div>
+            <button class="burger" type="button">
+                <span></span>
+            </button>
+         </nav>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="main-scrin-design">
+                <div id="popup" display = "none">
+                    <div class="popup-wrap">
+                        <button id="close-button"><img src="/images/pop-close.svg" alt="" srcset=""></button>
+                        <h2 class="form__block__title title" id="contact">Lass uns zusammen arbeiten</h2>
+                        <form class="form" action="" onsubmit="return validateFormPop()">
+                        <label for="name">Vollständiger Name*</label>
+                        <input class="input name" type="text" id="namePop" placeholder="Name">
+                        <div class="name-error-pop error"></div>
+                        <label for="phone">Nummer*</label>
+                        <input class="input phone" id="phonePop" type="tel" placeholder="+49 179 5959 595">
+                        <div class="phone-error-pop error"></div>
+                        <label for="email">E-Mail*</label>
+                        <input class="input email" id="emailPop" type="email" placeholder="example@mail.de">
+                        <div class="email-error-pop error"></div>
+                        <label for="comment">Kommentar</label>
+                        <input class="input comment" type="text" id="comment" placeholder="Ihr Kommentar...">
+                        <button class="button-form-pop button" type="submit">Schicken</button>
+                      </form>
+                  </div>
+                </div>
+                <div class="container">  
+                    <h1 class="main__title">Kleine Änderungen – große Ergebnisse</h1>
+                    <div class="main__buttons">
+                        <button class="buttons__btn-contact" onclick="showPopup()"> <a>Kontaktiere uns</a></button>
+                        <a href="" class="buttons__btn-video-wrap"> 
+                             <button class="buttons__btn-video">Video abspielen</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="form__block">
+                <div class="container">
+                    <div class="form__block-wrapper">
+                   <div class="form__image"> 
+                        <img id="cat-form" src="/images/cat-form.gif" alt=""> 
+                    </div> 
+                    <form class="form" action="" onsubmit="return validateForm()">
+                        <h2 class="form__block__title title" id="contact">Lass uns zusammen arbeiten</h2>
+                        <label for="name">Vollständiger Name*</label>
+                        <input class="input name" type="text" id="name" placeholder="Name">
+                        <div class="name-error error"></div>
+                        <label for="phone">Nummer*</label>
+                        <input class="input phone" id="phone" type="tel" placeholder="+49 179 5959 595">
+                        <div class="phone-error error"></div>
+                        <label for="email">E-Mail*</label>
+                        <input class="input email" id="email" type="email" placeholder="example@mail.de">
+                        <div class="email-error error"></div>
+                        <label for="comment">Kommentar</label>
+                        <input class="input comment" type="text" id="comment" placeholder="Ihr Kommentar...">
+                        <button class="button-form button" type="submit">Schicken</button>
+                      </form>
+                </div>
+                </div>
+            </div>
+         </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-contant">
+                <div class="footer__information">
+                    <a href="#" class="footer__logo">
+                        <img src="/images/logo.svg" alt="" srcset="">
+                    </a>
+                    <ul class="footer__sosial-list"> 
+                        <li class="menu-list"><a href="#" class="menu-list__link"><img src="/images/phone.svg" alt="" class="icon"> +49 (178) 198 60 35</a></li>
+                        <li class="menu-list"><a href="#" class="menu-list__link"><img src="/images/email.svg" alt="" class="icon"> info@code-helfer.de</a></li>
+                        <li class="menu-list"><a href="#" class="menu-list__link"><img src="/images/location.svg" alt="" class="icon"> Schillerstr. 50, Heilbronn, 74072</a></li>
+                        </ul>
+                    </div>
+                   
+                <div class="footer__menu">
+                    <h5>Menu</h5>
+                    <ul class="footer__munu-list"> 
+                        <li class="menu-list"><a href="#" class="menu-list__link">Home</a></li>
+                        <li class="menu-list"><a href="#" class="menu-list__link">Design & Webentwicklung</a></li>
+                        <li class="menu-list"><a href="#" class="menu-list__link">Data Science & Machine Learning</a></li>
+                        <li class="menu-list"><a href="#" class="menu-list__link">Web Scraping</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__sosial">
+                    <h5>Sosial</h5>
+                    <ul class="footer__menu-list"> 
+                        <li class="menu-list"><a href="#" class="menu-list__link"> <img src="/images/linkedin.svg" alt="" class="icon"> Linkedin</a></li>
+                        <li class="menu-list"><a href="#" class="menu-list__link"> <img src="/images/github.svg" alt="" class="icon"> HitHub</a></li>
+                        <li class="menu-list"><a href="#" class="menu-list__link"> <img src="/images/behance.svg" alt="" class="icon"> Behance</a></li>
+                    </ul>
+                   
+                </div>
+            </div>
+        </div>
+    </footer> 
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="code/lottie.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/scripts/choices.min.js"></script>
+   <script src="code/script.js"></script> 
+</body>
+</html>
