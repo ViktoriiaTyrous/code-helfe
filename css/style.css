@@ -973,6 +973,13 @@ footer {
 .project-category {
   display: none;
 }
+
+.non-gap {
+  gap: 0;
+}
+
+
+
 @media screen and (max-width: 925px) {
   .container,
   .header__container {
