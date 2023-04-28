@@ -1543,6 +1543,15 @@ footer {
     width: 540px;
     right: -308px;
   }
+  .popup-wrap {
+    display: block;
+    padding: 20px;
+    background: #ffffff;
+    max-width: 360px;
+    margin: 8% auto;
+    border-radius: 2%;
+    position: relative;
+}
 }
 @media screen and (max-width: 360px) {
   .service__item-title {
