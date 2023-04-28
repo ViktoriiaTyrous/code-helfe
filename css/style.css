@@ -1616,7 +1616,8 @@ footer {
   background-repeat: no-repeat;
   background-position: bottom 200px right 0px;
   height: 700px;
-  width:100%;;
+  width:100%;
+  padding-bottom: 100px;
 }
 
 
@@ -1680,19 +1681,19 @@ max-width: 100%;
 }
 
 #design-services-redesign {
-  top: 62px;
-  left: 0;
+  top: 29px;
+  left: 0px;
 }
 
 #design-service-develop {
   position: absolute;
-  top: 231px;
+  top: 174px;
   right: 350px;
 }
 
 #design-service-functional {
   position: absolute;
-  top: 270px;
+  top: 223px;
   right: 0;
 }
 
