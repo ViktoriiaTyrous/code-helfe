@@ -891,6 +891,8 @@ label {
 
 .error {
   color: #a52018;
+  font-size: 15px;
+  font-weight: 100;
 }
 
 /******************** FOOTER ***********************/
@@ -1650,6 +1652,7 @@ footer {
   display: flex;
   gap: 14px;
   padding:0px 16px 20px;
+  align-items: center;
 }
 
 .statistics__number {
@@ -1666,7 +1669,7 @@ color: #15162F;
 font-style: normal;
 font-weight: 600;
 font-size: 16px;
-line-height: 22px;
+line-height: 20px;
 max-width: 100%;
 }
 .design-services-item {
@@ -1732,3 +1735,31 @@ max-width: 100%;
     margin: 0 auto;
 }
   }
+
+
+.about-service-wrapper{
+  display: flex;
+  margin: 100px 0px ;
+  justify-content: space-between;
+
+  
+}
+
+.about-service__image-block {
+  max-width: 320px;
+  display: flex;
+  align-items: center;
+  height: 400px;
+}
+.about-service__image-block img {
+  width: 100%;
+}
+.about-service__text {
+  max-width: 550px;
+  font-family: 'Gilroy';
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 21px;
+padding: 36px 20px 0px 0px;
+}
