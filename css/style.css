@@ -700,11 +700,14 @@ body.popup-open {
   font-size: 16px;
   line-height: 22px;
   color: #2b2c4b;
+
 }
 
 #more {
   display: none;
+  transition: all 0.3s ease-out;
 }
+
 
 #myBtn {
   display: inline-block;
@@ -1741,6 +1744,7 @@ max-width: 100%;
   display: flex;
   margin: 100px 0px ;
   justify-content: space-between;
+  flex-wrap: wrap;
 
   
 }
