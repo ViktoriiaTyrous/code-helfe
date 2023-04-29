@@ -251,7 +251,7 @@ body.popup-open {
 
 .buttons__btn-contact:hover,
 .button-form:hover,
-#fixedbutton:hover {
+.fixedbutton:hover {
   background-color: #f3963c;
 }
 
@@ -641,6 +641,7 @@ body.popup-open {
 
 .about-content__wrap {
   max-width: 640px;
+  height: 100%;
   margin: 0 0 0 auto;
 }
 .about-container {
@@ -713,6 +714,7 @@ body.popup-open {
   color: #ef8723;
   background: none;
   font-weight: 700;
+  padding: 8px 0px 0px;
 }
 .about-content__title {
   padding-bottom: 48px;
@@ -962,8 +964,7 @@ footer {
   border-bottom: 2px solid rgb(176, 9, 9);
 }
 
-.button-form.disabled,
-.button-form-pop.disabled {
+.button-form.disabled {
   background: #cdcbcb;
   box-shadow: inset 0px -4px 4px #868686, inset 0px 4px 3px #dbdbdb;
 }

@@ -4,25 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices.min.css"/>
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="icon" type="image/x-icon" href="../images/favicon.svg" />
     <title>Design und Webentwicklung</title>
   </head>
   <body>
+    <a href="#head" id="fixedbutton"  onclick="showPopup()" class="button fix-btn"> <img src="./images/jam_write-f.svg" alt="">Kontaktiere uns</a>
     <header class="header">
       <div class="header__container">
         <nav class="navigation">
@@ -38,9 +30,7 @@
                 <a href="#" class="item__link">Design & Webentwicklung</a>
               </li>
               <li class="list__item">
-                <a href="#" class="item__link"
-                  >Data Science & Machine Learning</a
-                >
+                <a href="#" class="item__link">Data Science & Machine Learning</a>
               </li>
               <li class="list__item">
                 <a href="#" class="item__link">Web Scraping</a>
@@ -53,7 +43,7 @@
         </nav>
       </div>
     </header>
-    <main>
+   <main>
       <section>
         <div class="main-scrin-design">
           <div id="popup" display="none">
@@ -64,41 +54,19 @@
               <h2 class="form__block__title title" id="contact">
                 Lass uns zusammen arbeiten
               </h2>
-              <form class="form" action="" onsubmit="return validateFormPop()">
+              <form class="form" action="" onsubmit="return validateForm(event)">
                 <label for="name">Vollständiger Name*</label>
-                <input
-                  class="input name"
-                  type="text"
-                  id="namePop"
-                  placeholder="Name"
-                />
-                <div class="name-error-pop error"></div>
+                <input class="input" type="text" id="name" name="name" placeholder="Name">
+                <div class="error name-error" id="name-error"></div>
                 <label for="phone">Nummer*</label>
-                <input
-                  class="input phone"
-                  id="phonePop"
-                  type="tel"
-                  placeholder="+49 179 5959 595"
-                />
-                <div class="phone-error-pop error"></div>
+                <input class="input" id="phone" type="tel" name="phone" placeholder="+49 179 5959 595">
+                <div class="error phone-error" id="phone-error"></div>
                 <label for="email">E-Mail*</label>
-                <input
-                  class="input email"
-                  id="emailPop"
-                  type="email"
-                  placeholder="example@mail.de"
-                />
-                <div class="email-error-pop error"></div>
+                <input class="input" id="email" type="email" name="email" placeholder="example@mail.de">
+                <div class="error email-error" id="email-error"></div>
                 <label for="comment">Kommentar</label>
-                <input
-                  class="input comment"
-                  type="text"
-                  id="comment"
-                  placeholder="Ihr Kommentar..."
-                />
-                <button class="button-form-pop button" type="submit">
-                  Schicken
-                </button>
+                <input class="input ignore" type="text" id="comment" name="comment" placeholder="Ihr Kommentar...">
+                <button class="button-form button form-submit-btn" type="submit" id="submit-btn">Schicken</button>
               </form>
             </div>
           </div>
@@ -171,44 +139,20 @@ Verdienen Sie mehr mit einer schnelleren und bequemeren Website. Wussten Sie, da
               <div class="form__image">
                 <img id="cat-form" src="../images/cat-form.gif" alt="" />
               </div>
-              <form class="form" action="" onsubmit="return validateForm()">
-                <h2 class="form__block__title title" id="contact">
-                  Lass uns zusammen arbeiten
-                </h2>
+              <form class="form" action="" onsubmit="return validateForm(event)">
+                <h2 class="form__block__title title" id="contact">Lass uns zusammen arbeiten</h2>
                 <label for="name">Vollständiger Name*</label>
-                <input
-                  class="input name"
-                  type="text"
-                  id="name"
-                  placeholder="Name"
-                />
-                <div class="name-error error"></div>
+                <input class="input" type="text" id="name" name="name" placeholder="Name">
+                <div class="error name-error" id="name-error"></div>
                 <label for="phone">Nummer*</label>
-                <input
-                  class="input phone"
-                  id="phone"
-                  type="tel"
-                  placeholder="+49 179 5959 595"
-                />
-                <div class="phone-error error"></div>
+                <input class="input" id="phone" type="tel" name="phone" placeholder="+49 179 5959 595">
+                <div class="error phone-error" id="phone-error"></div>
                 <label for="email">E-Mail*</label>
-                <input
-                  class="input email"
-                  id="email"
-                  type="email"
-                  placeholder="example@mail.de"
-                />
-                <div class="email-error error"></div>
+                <input class="input" id="email" type="email" name="email" placeholder="example@mail.de">
+                <div class="error email-error" id="email-error"></div>
                 <label for="comment">Kommentar</label>
-                <input
-                  class="input comment"
-                  type="text"
-                  id="comment"
-                  placeholder="Ihr Kommentar..."
-                />
-                <button class="button-form button" type="submit">
-                  Schicken
-                </button>
+                <input class="input ignore" type="text" id="comment" name="comment" placeholder="Ihr Kommentar...">
+                <button class="button-form button form-submit-btn" type="submit" id="submit-btn">Schicken</button>
               </form>
             </div>
           </div>
@@ -289,11 +233,12 @@ Verdienen Sie mehr mit einer schnelleren und bequemeren Website. Wussten Sie, da
           </div>
         </div>
       </div>
-    </footer>
+    </footer> 
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="code/lottie.min.js"></script>
+    <script src="../code/lottie.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/scripts/choices.min.js"></script>
-    <script src="code/script.js"></script>
+    <script src="../code/validateForm.js"></script>
+    <script src="../code/script.js"></script>
   </body>
 </html>

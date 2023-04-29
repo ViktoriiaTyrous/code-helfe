@@ -53,20 +53,21 @@
                     <div class="popup-wrap">
                         <button id="close-button"><img src="./images/pop-close.svg" alt="" srcset=""></button>
                         <h2 class="form__block__title title" id="contact">Lass uns zusammen arbeiten</h2>
-                        <form class="form" action="" onsubmit="return validateFormPop()">
-                        <label for="name">Vollständiger Name*</label>
-                        <input class="input name" type="text" id="namePop" placeholder="Name">
-                        <div class="name-error-pop error"></div>
-                        <label for="phone">Nummer*</label>
-                        <input class="input phone" id="phonePop" type="tel" placeholder="+49 179 5959 595">
-                        <div class="phone-error-pop error"></div>
-                        <label for="email">E-Mail*</label>
-                        <input class="input email" id="emailPop" type="email" placeholder="example@mail.de">
-                        <div class="email-error-pop error"></div>
-                        <label for="comment">Kommentar</label>
-                        <input class="input comment" type="text" id="comment" placeholder="Ihr Kommentar...">
-                        <button class="button-form-pop button" type="submit">Schicken</button>
-                      </form>
+                        <form class="form" action="" onsubmit="return validateForm(event)">
+                            <label for="name">Vollständiger Name*</label>
+                            <input class="input" type="text" name="name" id="name" placeholder="Name">
+                            <div class="error" id="name-error"></div>
+                            <label for="phone">Nummer*</label>
+                            <input class="input" name="phone" id="phone" type="tel" placeholder="+49 179 5959 595">
+                            <div class="error" id="phone-error"></div>
+                            <label for="email">E-Mail*</label>
+                            <input class="input" name="email" id="email" type="email" placeholder="example@mail.de">
+                            <div class="error" id="email-error"></div>
+                            <label for="comment">Kommentar</label>
+                            <input class="input" type="text" name="comment" id="comment" placeholder="Ihr Kommentar...">
+                            <button class="button-form button form-submit-btn" type="submit">Schicken</button>
+                          </form>
+                          
                   </div>
                 </div>
                 <div class="container">  
@@ -257,9 +258,8 @@
         <section>
             <div class="about-block">
                 <div class="container about-container">
-            
-                    <div class="about-circle">  
-                        <div class="statistic" id="projects">
+                <div class="about-circle">  
+                    <div class="statistic" id="projects">
                         <div class="statistic__number">80+</div>
                         <div class="statistic__description">Abgeschlossene Projekte</div>
                     </div>
@@ -271,29 +271,27 @@
                         <div class="statistic__number">9,6☆</div>
                         <div class="statistic__description">Durchschnittliche Projektbewertung</div>
                     </div> 
-                    <div class="about-content__wrap"> 
-                        <h2 class="about-content__title title">Über uns</h2>
-                        <p class="about-content__text">
-                            Unser Unternehmen (Code-Helfer) wurde vor drei Jahren von einer Gruppe von IT-Spezialisten aus verschiedenen IT-Bereichen gegründet. Seitdem haben wir uns darauf konzentriert, unseren Kunden erstklassige IT-Lösungen anzubieten, die ihren Anforderungen entsprechen. <br>
-                            <br>
-                            Unser erfahrenes Team von Entwicklern, Designern und Data-Science-Experten arbeitet eng mit unseren Kunden zusammen, um sicherzustellen, dass wir ihre Erwartungen erfüllen. Wir sind stolz darauf, dass wir in der Lage sind, komplexe IT-Probleme zu lösen und maßgeschneiderte Lösungen für jeden unserer Kunden zu entwickeln. <span id="dots">...</span>
-                            <span id="more"> 
-                            Unsere Prinzipien sind Vertrauen, Fairness, Schnelligkeit, Qualität und Partnerschaft.
-                            Wir möchten sicherstellen, dass Sie nicht wochen- oder monatelang auf das Ergebnis Ihres Auftrags warten müssen, wenn wir ihn in wenigen Tagen qualitativ hochwertig erledigen können. Wir schätzen unsere eigene Zeit und die Zeit unserer Kunden gleichermaßen und unser Ziel ist es, das Problem des Kunden schnell und effektiv zu lösen.
-                             <br> 
-                                Ob es darum geht, Mehrwert aus Daten zu gewinnen, eine Webseite mit einem einzigartigen Design zu erstellen, wertvolle Wettbewerbsdaten zu erhalten oder Serverkosten zu minimieren - wir sind gerne bereit, unseren Partnern bei der Erreichung ihrer Ziele zu helfen.
-                                Wir sind keine Dienstleister, wir sind ein IT-Team, das Ihnen gerne hilft, ihre Ideen zu verwirklichen.
-                                <br>
-                                Unser Team hat auch ein Team von Outsource-Spezialisten in der Ukraine, die uns bei Bedarf unterstützen. Wir haben diese Partnerschaft geschaffen, um sicherzustellen, dass wir unseren Kunden auch bei komplexen Projekten umfassende Lösungen anbieten können.
-                            </span>
-                        </p>
-                        <button id="myBtn"> Weiterlesen </button>
-         
-           
-                    </div> 
                 </div> 
-            </div>   
-                 
+                <div class="about-content__wrap"> 
+                    <h2 class="about-content__title title">Über uns</h2>
+                    <p class="about-content__text">
+                        Unser Unternehmen (Code-Helfer) wurde vor drei Jahren von einer Gruppe von IT-Spezialisten aus verschiedenen IT-Bereichen gegründet. Seitdem haben wir uns darauf konzentriert, unseren Kunden erstklassige IT-Lösungen anzubieten, die ihren Anforderungen entsprechen. <br>
+                        <br>
+                        Unser erfahrenes Team von Entwicklern, Designern und Data-Science-Experten arbeitet eng mit unseren Kunden zusammen, um sicherzustellen, dass wir ihre Erwartungen erfüllen. Wir sind stolz darauf, dass wir in der Lage sind, komplexe IT-Probleme zu lösen und maßgeschneiderte Lösungen für jeden unserer Kunden zu entwickeln. <span id="dots">...</span>
+                        <span id="more"> 
+                        Unsere Prinzipien sind Vertrauen, Fairness, Schnelligkeit, Qualität und Partnerschaft.
+                        Wir möchten sicherstellen, dass Sie nicht wochen- oder monatelang auf das Ergebnis Ihres Auftrags warten müssen, wenn wir ihn in wenigen Tagen qualitativ hochwertig erledigen können. Wir schätzen unsere eigene Zeit und die Zeit unserer Kunden gleichermaßen und unser Ziel ist es, das Problem des Kunden schnell und effektiv zu lösen.
+                         <br> 
+                            Ob es darum geht, Mehrwert aus Daten zu gewinnen, eine Webseite mit einem einzigartigen Design zu erstellen, wertvolle Wettbewerbsdaten zu erhalten oder Serverkosten zu minimieren - wir sind gerne bereit, unseren Partnern bei der Erreichung ihrer Ziele zu helfen.
+                            Wir sind keine Dienstleister, wir sind ein IT-Team, das Ihnen gerne hilft, ihre Ideen zu verwirklichen.
+                            <br>
+                            Unser Team hat auch ein Team von Outsource-Spezialisten in der Ukraine, die uns bei Bedarf unterstützen. Wir haben diese Partnerschaft geschaffen, um sicherzustellen, dass wir unseren Kunden auch bei komplexen Projekten umfassende Lösungen anbieten können.
+                        </span>
+                    </p>
+                    <button id="myBtn"> Weiterlesen </button>
+                </div>
+            </div>
+        </div>
         </section>
    <section>
         <div class="team">
@@ -402,20 +400,20 @@
                <div class="form__image"> 
                     <img id="cat-form" src="./images/cat-form.gif" alt=""> 
                 </div> 
-                <form class="form" action="" onsubmit="return validateForm()">
+                <form class="form" action="" onsubmit="return validateForm(event)">
                     <h2 class="form__block__title title" id="contact">Lass uns zusammen arbeiten</h2>
                     <label for="name">Vollständiger Name*</label>
-                    <input class="input name" type="text" id="name" placeholder="Name">
-                    <div class="name-error error"></div>
+                    <input class="input" type="text" id="name" name="name" placeholder="Name">
+                    <div class="error name-error" id="name-error"></div>
                     <label for="phone">Nummer*</label>
-                    <input class="input phone" id="phone" type="tel" placeholder="+49 179 5959 595">
-                    <div class="phone-error error"></div>
+                    <input class="input" id="phone" type="tel" name="phone" placeholder="+49 179 5959 595">
+                    <div class="error phone-error" id="phone-error"></div>
                     <label for="email">E-Mail*</label>
-                    <input class="input email" id="email" type="email" placeholder="example@mail.de">
-                    <div class="email-error error"></div>
+                    <input class="input" id="email" type="email" name="email" placeholder="example@mail.de">
+                    <div class="error email-error" id="email-error"></div>
                     <label for="comment">Kommentar</label>
-                    <input class="input comment" type="text" id="comment" placeholder="Ihr Kommentar...">
-                    <button class="button-form button" type="submit">Schicken</button>
+                    <input class="input ignore" type="text" id="comment" name="comment" placeholder="Ihr Kommentar...">
+                    <button class="button-form button form-submit-btn" type="submit" id="submit-btn">Schicken</button>
                   </form>
             </div>
             </div>
@@ -462,6 +460,7 @@
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="code/lottie.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/scripts/choices.min.js"></script>
+    <script src="code/validateForm.js"></script>
    <script src="code/script.js"></script> 
 </body>
 </html>
