@@ -578,7 +578,7 @@ body.popup-open {
   line-height: 24px;
   color: #2b2b2b;
   max-width: 850px;
-  margin: 32px auto;
+  margin: 16px auto 32px;
 }
 .project-text a {
   font-family: "Gilroy";
@@ -1608,12 +1608,12 @@ footer {
 
 .design-services {
   width: 100%;
-  overflow: hidden;
+  
 }
 
 .design-services__img {
   background-image: url("../images/services-design.svg");
-  background-size: cover;
+  background-size: auto;
   background-repeat: no-repeat;
   background-position: bottom 200px right 0px;
   height: 700px;
@@ -1682,19 +1682,19 @@ max-width: 100%;
 }
 
 #design-services-redesign {
-  top: 29px;
+  top: -67px;
   left: 0px;
 }
 
 #design-service-develop {
   position: absolute;
-  top: 174px;
+  top: 121px;
   right: 350px;
 }
 
 #design-service-functional {
   position: absolute;
-  top: 223px;
+  top: 183px;
   right: 0;
 }
 
@@ -1702,3 +1702,33 @@ max-width: 100%;
   padding-top: 100px;
   margin-left: auto;
 }
+
+@media screen and (max-width: 980px) {
+  .design-services-item {
+    max-width: 90%;
+    position: static;
+  }
+  #design-service-functional, #design-service-develop,#design-services-redesign {
+    position: static;
+
+  }
+  .design-services__items{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: center;
+    align-items: center
+  }
+  .design-services {
+    height: auto;
+  }
+  .design-services__img {
+    height: auto;
+  }
+  .design-services-block__title {
+    padding-top: 100px;
+    padding-bottom: 60px;
+    margin: 0 auto;
+}
+  }
