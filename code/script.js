@@ -222,3 +222,25 @@ arrowLeftBtn.addEventListener('click', () => {
   }
   showTab(currentTabIndex);
 });
+
+const btns = document.querySelectorAll('.structure__btn-mobile');
+const contentBox = document.querySelectorAll('.structure__content-box-mobile');
+
+for (let i = 0; i < btns.length; i++) {
+  btns[i].addEventListener('click', () => {
+    if (contentBox[i].style.display === 'block') {
+      contentBox[i].style.display = 'none';
+      btns[i].classList.remove('active');
+    } else {
+      contentBox.forEach(box => {
+        box.style.display = 'none';
+      });
+      contentBox[i].style.display = 'block';
+      btns.forEach(btn => {
+        btn.classList.remove('active');
+      });
+      btns[i].classList.add('active');
+    }
+  });
+}
+
