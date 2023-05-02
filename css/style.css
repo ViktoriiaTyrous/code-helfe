@@ -1767,3 +1767,125 @@ font-size: 16px;
 line-height: 21px;
 padding: 36px 20px 0px 0px;
 }
+
+/************************************************/
+.structure__buttons-container {
+height: 330px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+background-image: url("../images/stucture-line.svg");
+background-repeat: no-repeat;
+background-position: 30px 0px;
+max-width: 300px;
+}
+
+.structure__btn {
+  background: #6669C8;
+  width: 60px;
+  height: 60px;
+  color: #fff;
+  font-family: 'Gilroy';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+border: none;
+border-radius: 50px;
+position: relative;
+z-index: 4;
+}
+
+.structure__content-box, .structure__content-box-wrapper {
+background: #EEEFF8;
+border-radius: 20px;
+max-height: 350px;
+max-width: 650px;
+width: 100%;
+padding: 25px;
+position: relative;
+}
+
+.structure__content-wrap {
+  display: flex;
+  justify-content: space-between;
+
+}
+.structure__title {
+  font-family: 'Gilroy';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 24px;
+max-width: 200px;
+display: block;
+padding-left: 20px;
+
+}
+.structure__buttons-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.structure__content-box__title {
+  font-family: 'Gilroy';
+font-style: normal;
+font-weight: 700;
+font-size: 28px;
+line-height: 34px;
+color: #15162F;
+padding: 0 0 25px;
+
+}
+
+.structure__content-box__text {
+  font-family: 'Gilroy';
+font-weight: 300;
+font-size: 16px;
+line-height: 22px;
+}
+
+.structure__content-box {
+  display: none;
+}
+
+.structure__content-box.active {
+  display: block;
+}
+
+.structure__content-box-arrows {
+  display: flex;
+  justify-content: space-between;
+  width: 105%;
+  position: absolute;
+  right: -16px;
+  top: calc(50% - 16px);
+}
+.structure__content-box-arrows img{
+width: 20px;
+height: 20px;
+}
+.arrow-left, .arrow-right {
+  width: 32px;
+  height: 32px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 0px 2px 11px rgba(126, 126, 126, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ 
+.structure__btn.active::after{
+  content: "";
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: radial-gradient(63.89% 63.89% at 50% 50%, rgba(102, 105, 200, 0) 0%, rgba(102, 105, 200, 0.74) 49.48%, rgba(102, 105, 200, 0) 80.21%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  display: block;
+  position: absolute;
+  top: -17%;
+  right: -10px;
+  z-index: 2;
+}
