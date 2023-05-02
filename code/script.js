@@ -69,7 +69,27 @@ anim.loadAnimation({
   autoplay: true,
   path: "../animation/01.json",
 });
-
+anim.loadAnimation({
+  container: document.querySelector("#lottie_10"),
+  render: "svg",
+  loop: true,
+  autoplay: true,
+  path: "../animation/Musse_002.json",
+});
+anim.loadAnimation({
+  container: document.querySelector("#lottie_11"),
+  render: "svg",
+  loop: true,
+  autoplay: true,
+  path: "../animation/old.json",
+});
+anim.loadAnimation({
+  container: document.querySelector("#lottie_12"),
+  render: "svg",
+  loop: true,
+  autoplay: true,
+  path: "../animation/new.json",
+});
 
 var swiper = new Swiper(".mySwiper_1", {
   slidesPerView: 3,
