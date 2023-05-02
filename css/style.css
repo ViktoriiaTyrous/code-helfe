@@ -1770,7 +1770,7 @@ padding: 36px 20px 0px 0px;
 
 /************************************************/
 .structure__buttons-container {
-height: 330px;
+min-height: 330px;
 display: flex;
 flex-direction: column;
 justify-content: space-between;
@@ -1799,7 +1799,7 @@ z-index: 4;
 .structure__content-box, .structure__content-box-wrapper {
 background: #EEEFF8;
 border-radius: 20px;
-max-height: 350px;
+min-height: 250px;
 max-width: 650px;
 width: 100%;
 padding: 25px;
@@ -1817,7 +1817,8 @@ font-style: normal;
 font-weight: 500;
 font-size: 18px;
 line-height: 24px;
-max-width: 200px;
+width: 200px;
+
 display: block;
 padding-left: 20px;
 
