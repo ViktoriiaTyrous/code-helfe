@@ -227,7 +227,7 @@ tabButtons.forEach((button, index) => {
   });
 });
 
-arrowRightBtn.addEventListener('click', () => {
+arrowLeftBtn.addEventListener('click', () => {
   currentTabIndex++;
   if (currentTabIndex >= tabContentBoxes.length) {
     currentTabIndex = 0;
@@ -235,7 +235,7 @@ arrowRightBtn.addEventListener('click', () => {
   showTab(currentTabIndex);
 });
 
-arrowLeftBtn.addEventListener('click', () => {
+arrowRightBtn.addEventListener('click', () => {
   currentTabIndex--;
   if (currentTabIndex < 0) {
     currentTabIndex = tabContentBoxes.length - 1;
