@@ -26,8 +26,8 @@ a {
   gap: 8px;
 }
 #myVideo {
-  width:100%;
-  height:auto;
+  width: 100%;
+  height: auto;
   margin-top: 50px;
 }
 
@@ -738,24 +738,6 @@ body.popup-open {
   padding-bottom: 48px;
   padding-top: 130px;
 }
-/*
-.about-block {
-  display: flex;
-  flex-direction: row;
-}
-
-
-
-
-
-
-
-.
-
-
-
-
-
 
 /******************** TEAM ***********************/
 .team__title {
