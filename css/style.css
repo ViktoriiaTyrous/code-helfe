@@ -29,6 +29,7 @@ a {
   width: 100%;
   height: auto;
   margin-top: 50px;
+  position: relative;
 }
 
 body.popup-open {
@@ -655,7 +656,7 @@ body.popup-open {
 
 .about-content__wrap {
   max-width: 640px;
-  height: 100%;
+  height: auto;
   margin: 0 0 0 auto;
 }
 .about-container {
@@ -731,7 +732,7 @@ body.popup-open {
   color: #ef8723;
   background: none;
   font-weight: 700;
-  padding: 8px 0px 0px;
+  padding: 8px 2px 2px;
   cursor: pointer;
 }
 .about-content__title {
