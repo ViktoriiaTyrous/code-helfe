@@ -26,11 +26,9 @@ a {
   gap: 8px;
 }
 #myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%; 
-  min-height: 100%;
+  width:100%;
+  height:auto;
+  margin-top: 50px;
 }
 
 body.popup-open {
@@ -191,10 +189,10 @@ body.popup-open {
 .main-scrin,
 .main-scrin-design {
   width: 100vw;
-  background-image: url("../images/main.jpg");
-  height: calc(100vh - 150px);
+  /* background-image: url("../images/main.jpg"); */
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
 
 .main-scrin-design {
@@ -204,11 +202,13 @@ body.popup-open {
 .main__buttons {
   margin-top: 42px;
   display: flex;
+  
 }
 .buttons__btn-video-wrap {
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 .buttons__btn-video {
@@ -265,7 +265,7 @@ body.popup-open {
 }
 
 .main__title {
-  font-family: Gilroy, sans-serif;
+  font-family: "Gilroy", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 72px;
@@ -273,6 +273,9 @@ body.popup-open {
   padding-top: 250px;
   width: 885px;
   color: rgb(255, 255, 255);
+  position: relative;
+  display: none;
+
 }
 .title {
   font-family: Gilroy, sans-serif;
@@ -1012,7 +1015,7 @@ footer {
   background-image: url("../images/services-design.svg");
   background-size: auto;
   background-repeat: no-repeat;
-  background-position: bottom 200px right 0px;
+  background-position: bottom 198px right -274px;
   height: 700px;
   width:100%;
   padding-bottom: 100px;
@@ -1953,4 +1956,25 @@ height: 20px;
       margin: 0 auto;
   }
     }
-  
+    @media screen and (min-width: 1530px) {
+      .design-services__img {
+        background-position: bottom 144px right -252px;
+    }
+    }
+
+    @media screen and (min-width: 1700px) {
+      .design-services__img{ 
+        background-position: bottom 176px right -94px;
+    }
+    }
+
+    @media screen and (min-width: 2000px) {
+      .design-services__img {
+        background-position: bottom 154px right -16px;
+    }
+    }
+
+    @media screen and (min-width: 2200px){
+.design-services__img {
+    background-position: bottom 139px right 66px;
+}}

@@ -264,3 +264,21 @@ for (let i = 0; i < btns.length; i++) {
   });
 }
 
+
+const playButton = document.getElementById("playButton");
+
+// Зупиняємо відтворення відео
+video.pause();
+
+// Встановлюємо таймер на 3 секунди
+setTimeout(function() {
+  const video = document.getElementById("myVideo");
+}, 3000);
+
+// Додаємо обробник кліку на кнопку
+playButton.addEventListener("click", function() {
+  // Приховуємо кнопку
+  playButton.style.display = "none";
+  // Запускаємо відтворення відео
+  video.play();
+});
