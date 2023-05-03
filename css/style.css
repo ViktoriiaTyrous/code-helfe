@@ -744,8 +744,9 @@ body.popup-open {
   padding-top: 130px;
 }
 
+
 /******************** TEAM ***********************/
-.team__title {
+.team__title, .about-service__title {
   padding-bottom: 48px;
 }
 .card {
@@ -1097,7 +1098,7 @@ max-width: 100%;
 
 .about-service-wrapper{
   display: flex;
-  margin: 100px 0px;
+  margin: 100px 0px 0px;
   justify-content: space-between;
   flex-wrap: wrap;
 
