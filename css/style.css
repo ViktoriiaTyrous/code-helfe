@@ -732,6 +732,7 @@ body.popup-open {
   background: none;
   font-weight: 700;
   padding: 8px 0px 0px;
+  cursor: pointer;
 }
 .about-content__title {
   padding-bottom: 48px;
