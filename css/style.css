@@ -758,6 +758,11 @@ body.popup-open {
   max-width: 410px;
   margin-bottom: 32px;
   margin-right: 12px;
+  
+}
+.card-content__image {
+  display: flex;
+  flex-direction: column;
 }
 
 .card-content__image img {
@@ -833,6 +838,17 @@ body.popup-open {
   line-height: 34px;
   color: #2b2c4b;
   margin-top: 18px;
+  text-align: center;
+}
+.card-content__profession {
+  font-family: 'Gilroy';
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 21px;
+display: inline;
+width: 100%;
+text-align: center;
 }
 /******************** FORM ***********************/
 .form__block {
