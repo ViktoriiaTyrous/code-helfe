@@ -349,6 +349,7 @@ body.popup-open {
   color: #212234;
   max-width: 240px;
   margin-left: 12px;
+  text-align: left;
 }
 .service__item-wrap {
   position: absolute;
@@ -372,6 +373,28 @@ body.popup-open {
 #personal {
   top: 434px;
   right: -199px;
+  background: none;
+  border: none;
+  
+}
+.text-for-personal {
+  padding: 12px 18px;
+  position: absolute;
+  max-width: 325px;
+  bottom: -80px;
+  right: -168px;
+  background: #EEF0F8;
+  display: none;
+box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+border-radius: 10px;
+transition: all 0.3s ease;
+font-size: 16px;
+z-index: 30;
+
+}
+
+.text-for-personal.active {
+  display: block;
 }
 
 #cat {
@@ -386,12 +409,13 @@ body.popup-open {
   display: none;
 }
 
-.service__item-wrap:hover .service__item,
+.service__item-wrap:not(:last-child):hover .service__item,
 .choices .is-open {
   transform: scale(1.05);
   background: #777bea;
   transition: 0.5s all ease-in-out;
 }
+
 
 /******************** PROJECTS ***********************/
 .is-focused .choices__inner,
@@ -469,6 +493,7 @@ body.popup-open {
 
 .projects-block {
   position: relative;
+  margin-top: 150px;
 }
 
 .projects-block__tabs__container {
@@ -598,7 +623,7 @@ body.popup-open {
   max-width: 850px;
   margin: 16px auto 32px;
 }
-.project-text a {
+.project-text a, .text-for-personal button {
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 500;
@@ -606,6 +631,7 @@ body.popup-open {
   line-height: 24px;
   text-decoration-line: underline;
   color: #ef8723;
+  border:none
 }
 .content-box {
   margin-top: 24px;
@@ -1342,10 +1368,23 @@ height: 20px;
     top: 463px;
     right: -146px;
   }
+
+  .text-for-personal {
+    bottom: -119px;
+    right: -115px;
+  }
+
   #scraping {
     top: 301px;
     right: -86px;
   }
+
+
+
+.projects-block {
+  position: relative;
+  margin-top: 200px;
+}
   .burger {
     display: block;
     flex: 0 0 30px;
@@ -1515,7 +1554,10 @@ height: 20px;
     top: 463px;
     right: -27px;
   }
-
+  .text-for-personal {
+    bottom: -119px;
+    right: -5px;
+}
   .container-about {
     margin: 0 auto;
   }
@@ -1587,6 +1629,11 @@ height: 20px;
     top: 478px;
     right: 115px;
   }
+
+  .text-for-personal {
+    bottom: -119px;
+    right: 134px;
+}
 
   .form__image {
     display: none;
@@ -1757,6 +1804,11 @@ height: 20px;
     padding-bottom: 25px;
     padding-top: 498px;
   }
+
+  .text-for-personal {
+    bottom: -119px;
+    right: 62px;
+}
 }
 
 @media screen and (max-width: 495px) {
