@@ -1,13 +1,3 @@
-let service = document.getElementById("personal");
-let text = document.querySelector(".text-for-personal");
-
-service.addEventListener("click", function() {
-  if (text.classList.contains("active")) {
-    text.classList.remove("active");
-  } else {
-    text.classList.add("active");
-  }
-});
 
 let popup = document.getElementById("popup");
 let closeButton = document.getElementById("close-button");
@@ -273,4 +263,3 @@ for (let i = 0; i < btns.length; i++) {
     }
   });
 }
-
