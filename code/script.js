@@ -92,10 +92,10 @@ anim.loadAnimation({
 });
 
 var swiper = new Swiper(".mySwiper_1", {
-  slidesPerView: 3,
+  slidesPerView: 'auto',
   spaceBetween: 30,
   slidesPerGroup: 3,
-  loop: true,
+  loop: false,
   disabledClass: true,
   pagination: {
     el: ".swiper-pagination",
