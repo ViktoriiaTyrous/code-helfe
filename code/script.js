@@ -117,8 +117,8 @@ var swiper = new Swiper(".mySwiper_1", {
     },
     // when window width is <= 480px
     480: {
-      slidesPerGroup: 1,
-      slidesPerView: 1,
+      slidesPerGroup: 2,
+      slidesPerView: 2,
       spaceBetween: 20,
     },
     540: {
