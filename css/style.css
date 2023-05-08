@@ -109,6 +109,7 @@ body.popup-open {
   max-width: 1000px;
   margin: 0 auto;
   padding: 0 10px;
+  position: relative;
 }
 /*************HEADER***********/
 .header {
@@ -203,17 +204,6 @@ body.popup-open {
   background-image: url("../images/main-design.jpg");
 }
 
-.main__buttons {
-  margin-top: 42px;
-  display: flex;
-  
-}
-.buttons__btn-video-wrap {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-}
 
 .buttons__btn-video {
   background: none;
@@ -222,10 +212,13 @@ body.popup-open {
   border: none;
   font-weight: 700;
   position: relative;
-  display: block;
-  margin-left: 32px;
   font-size: 16px;
-  display: block;
+  display: flex;
+  align-items: center; 
+  gap: 8px;
+  position: absolute;
+  bottom: 30px;
+  left: 0;
 }
 
 .buttons__btn-contact a {
@@ -234,16 +227,6 @@ body.popup-open {
   height: 100%;
 }
 
-.buttons__btn-video::before {
-  content: "";
-  background-image: url("../images/video.svg");
-  width: 24px;
-  height: 24px;
-  display: block;
-  float: left;
-  margin-right: 8px;
-  text-align: center;
-}
 
 .buttons__btn-contact,
 .button {
@@ -1005,6 +988,19 @@ footer {
   width: 100%;
   height: 2px;
   background: #eeeff8;
+}
+.footer__policy {
+ text-align: center;
+padding: 32px 0 16px;
+
+}
+
+.footer__policy a {
+  color: #A3A3A3;
+  text-decoration: underline;
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: 300;
 }
 
 .button-form.error {

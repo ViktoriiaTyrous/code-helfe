@@ -90,6 +90,20 @@ anim.loadAnimation({
   autoplay: true,
   path: "../animation/new.json",
 });
+anim.loadAnimation({
+  container: document.querySelector("#lottie_13"),
+  render: "svg",
+  loop: true,
+  autoplay: true,
+  path: "./animation/mobile_de.json",
+});
+anim.loadAnimation({
+  container: document.querySelector("#lottie_14"),
+  render: "svg",
+  loop: true,
+  autoplay: true,
+  path: "./animation/mobile_de.json",
+});
 
 var swiper = new Swiper(".mySwiper_1", {
   slidesPerView: 'auto',
