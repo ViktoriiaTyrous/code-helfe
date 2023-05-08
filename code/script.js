@@ -104,6 +104,21 @@ anim.loadAnimation({
   autoplay: true,
   path: "./animation/mobile_de.json",
 });
+anim.loadAnimation({
+  container: document.querySelector("#lottie_15"),
+  render: "svg",
+  loop: true,
+  autoplay: true,
+  path: "../animation/mobile_de.json",
+});
+anim.loadAnimation({
+  container: document.querySelector("#lottie_16"),
+  render: "svg",
+  loop: true,
+  autoplay: true,
+  path: "../animation/mobile_de.json",
+});
+
 
 var swiper = new Swiper(".mySwiper_1", {
   slidesPerView: 'auto',
@@ -233,5 +248,16 @@ personalBtn.addEventListener('click', function() {
     textForPersonal.classList.remove('active');
   } else {
     textForPersonal.classList.add('active');
+  }
+});
+
+let video = document.getElementById("myVideo");
+let videoButton = document.querySelector(".buttons__btn-video");
+
+videoButton.addEventListener("click", function() {
+  if (video.muted) {
+    video.muted = false;
+  } else {
+    video.muted = true;
   }
 });

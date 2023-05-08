@@ -598,7 +598,7 @@ z-index: 30;
 }
 .project-content__image img {
   width: 100%;
-  max-width: 550px;
+  max-width: 460px;
 }
 
 .project-text {
@@ -1324,6 +1324,20 @@ height: 20px;
 .structure__content-box-mobile {
   width: 70%;
 }
+
+/****************DATA********************/
+
+.data__container {
+  max-width: 800px;
+  margin: 50px auto;
+  font-family: "Gilroy", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+}
+
+
+
 @media screen and (max-width: 925px) {
   .container,
   .header__container {
