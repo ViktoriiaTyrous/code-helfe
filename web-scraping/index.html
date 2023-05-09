@@ -24,16 +24,16 @@
           <div class="menu-body">
             <ul class="list">
               <li class="list__item">
-                <a href="../index.html" class="item__link active">Home</a>
+                <a href="../index.html" class="item__link">Home</a>
               </li>
               <li class="list__item">
-                <a href="../Design/index.html" class="item__link">Design & Webentwicklung</a>
+                <a href="../design/index.html" class="item__link">Design & Webentwicklung</a>
               </li>
               <li class="list__item">
-                <a href="../Data Science und Machine Learning/index.html" class="item__link">Data Science & Machine Learning</a>
+                <a href="../data-science/index.html" class="item__link">Data Science & Machine Learning</a>
               </li>
               <li class="list__item">
-                <a href="#" class="item__link">Web Scraping</a>
+                <a href="#" class="item__link active">Web Scraping</a>
               </li>
             </ul>
           </div>
@@ -71,15 +71,7 @@
             </div>
           </div>
           <div class="container">
-            <h1 class="main__title">Web Scraping</h1>
-            <div class="main__buttons">
-              <button class="buttons__btn-contact" onclick="showPopup()">
-                <a>Kontaktiere uns</a>
-              </button>
-              <a href="" class="buttons__btn-video-wrap">
-                <button class="buttons__btn-video">Video abspielen</button>
-              </a>
-            </div>
+            <h1 class="main__title main__title-service">Web Scraping</h1>
           </div>
         </div>
       </section>
@@ -110,7 +102,7 @@
                 </p>
                 <div class="design-services-item__statistics" >
                     <div class="statistics__number">25+</div>
-                    <div class="statistics__description">Entwickelte Webseiten</div>
+                    <div class="statistics__description">Gescrapte Webseiten</div>
                 </div>
               </div>
               <div class="design-services-item" id="design-service-functional">
@@ -122,7 +114,7 @@
                 </p>
                 <div class="design-services-item__statistics">
                     <div class="statistics__number">17x</div>
-                    <div class="statistics__description">Funktionalität Geschwindigkeit</div>
+                    <div class="statistics__description">Funktionalitätsge-schwindigkeit</div>
                 </div>
             </div>
               </div>
@@ -141,13 +133,13 @@
                      <select id="project-category" class="js-choice">
                     <option class="select-item" value="design-web">Wettbewerbsanalyse</option>
                     <option class="select-item" value="data-science">Datenbeschaffung & Marktforschung</option>
-                    <option class="select-item" value="web-scraping">Entwicklung</option>
+                    <option class="select-item" value="web-scraping">Automatisierung</option>
                      </select>
                 </div>
                 <div class="projects-block__tabs__container">
                    <button class="tab-btn active">Wettbewerbsanalyse</button>
                    <button class="tab-btn">Datenbeschaffung & Marktforschung</button>
-                   <button class="tab-btn">Entwicklung</button>
+                   <button class="tab-btn">Automatisierung</button>
                    <div class="line"></div>
                 </div>
                 <div class="content-box active" id="design-web">
@@ -171,13 +163,6 @@
                             </div>
                         </div>
                       </div>
-                        <!-- <div class="swiper-buttons">   
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
-                        </div>
-                     
-                        <div class="swiper-pagination"></div>
-                    </div> -->
                 </div>
                 <div class="content-box" id="data-science">
                     <div class="container">
@@ -189,12 +174,12 @@
                                             <span>Vor</span>
                                     </div>
                                     <div class="project-content__image project-content__image-img animation">
-                                        <img src="../images/avtoria_analise.png" alt="">
+                                        <img src="../images/web-scr_avtoria.png" alt="">
                                         <span>Nach</span>
                                     </div>
                                     </div>
                                     <div class="project-text">
-                                        Ein Gebrauchtwagenunternehmen wollte einen besseren Überblick über den Automarkt, um zu wissen, wie schnell und zu welchem Preis bestimmte Modelle im ganzen Land verkauft wurden. Somit konnte Unternehmen bessere Entscheidungen bei der Autoanschaffung treffen und folglich mehr verdienen. Wir waren in der Lage, ein Programm zu entwickeln, das Daten von Autobörse sammelte. Die Daten wurden regelmäßig eingeholt, so dass wir fast täglich feststellen konnten, wann ein Auto aufgelistet und ausgelistet (vermutlich verkauft) wurde. Wir haben auch ein Programm geschrieben, das die Preise von noch nicht aufgelisteten Auots vorhersagt (mehr dazu im Abschnitt <a href="">Data Scinece</a> ).</div>
+                                        Ein Gebrauchtwagenunternehmen wollte einen besseren Überblick über den Automarkt, um zu wissen, wie schnell und zu welchem Preis bestimmte Modelle im ganzen Land verkauft wurden. Somit konnte Unternehmen bessere Entscheidungen bei der Autoanschaffung treffen und folglich mehr verdienen. Wir waren in der Lage, ein Programm zu entwickeln, das Daten von Autobörse sammelte. Die Daten wurden regelmäßig eingeholt, so dass wir fast täglich feststellen konnten, wann ein Auto aufgelistet und ausgelistet (vermutlich verkauft) wurde. Wir haben auch ein Programm geschrieben, das die Preise von noch nicht aufgelisteten Auots vorhersagt (mehr dazu im Abschnitt <a href="../data-science/index.html">Data Scinece</a> ).</div>
                                 </div>
                             </div>
                         </div>
@@ -216,7 +201,7 @@
                                     </div>
                                     </div>
                                     <div class="project-text">
-                                        Ein E-Commerce-Unternehmen kauft Waren in China ein und verkauft sie in Europa. Da die Auswahl an möglichen Waren groß ist und das Unternehmen großen Wert auf Kundenzufriedenheit und Qualität legt, haben wir ein Web-Scraping-Programm geschrieben, das Kundenkommentare und Bewertungen sammelt. Später entwickelten wir auch ein Data-Science-Programm, das die Kommentare nutzt, um Produkte zu klassifizieren und Empfehlungen abzugeben, ob ein bestimmtes Produkt kaufenswert ist (erfahren Sie mehr über unseren <a href="">Data Science</a> Bereich). Beide Schritte führten zu mehr Umsatz, höheren Gewinnen und zufriedeneren Kunden.</div>
+                                        Ein E-Commerce-Unternehmen kauft Waren in China ein und verkauft sie in Europa. Da die Auswahl an möglichen Waren groß ist und das Unternehmen großen Wert auf Kundenzufriedenheit und Qualität legt, haben wir ein Web-Scraping-Programm geschrieben, das Kundenkommentare und Bewertungen sammelt. Später entwickelten wir auch ein Data-Science-Programm, das die Kommentare nutzt, um Produkte zu klassifizieren und Empfehlungen abzugeben, ob ein bestimmtes Produkt kaufenswert ist (erfahren Sie mehr über unseren <a href="../data-science/index.html">Data Science</a> Bereich). Beide Schritte führten zu mehr Umsatz, höheren Gewinnen und zufriedeneren Kunden.</div>
                                 </div>
                             </div>
                         </div>
@@ -260,38 +245,39 @@
             <div class="structure__content-wrap-mobile">
               <div class="structure__buttons-wrapper">
                   <button class="structure__btn-mobile active">1</button>
-                  <span class="structure__title">"Was ist los?"</span>
+                  <span class="structure__title">"Was ist hier los?"</span>
                 </div>
                 <div class="structure__content-box-mobile active">
-                  <h4 class="structure__content-box__title">"Was ist los?"</h4>
+                  <h4 class="structure__content-box__title">"Was ist hier los?"</h4>
                   <p class="structure__content-box__text">
                     - Was ist das Problem, das wir gemeinsam lösen müssen? <br>
                     - Wir führen eine Analyse durch, um zu sehen, wie die Daten das Problem lösen könnten. <br>
-                    - Wir entwickeln einen Plan und setzen ihn in eine geeignete Softwarelösung um.
+                    - Wir entwickeln einen Plan und setzen ihn in eine geeignete Softwarelösung um. <br>
+
                   </p>
                 </div>
                 
                 <div class="structure__buttons-wrapper">
                   <button class="structure__btn-mobile">2</button>
-                  <span class="structure__title">Entwicklung und Modellierung</span>
+                  <span class="structure__title"> Entwicklung</span>
                 </div>
                 <div class="structure__content-box-mobile">
-                  <h4 class="structure__content-box__title"> Entwicklung und Modellierung</h4>
+                  <h4 class="structure__content-box__title"> Entwicklung</h4>
                   <p class="structure__content-box__text">
                     - Wir entwickeln die Software, die die benötigten Daten einholt. <br>
-- Wir berücksichtigen Sicherheitsmaßnahmen, damit die Datenerfassung nicht von Website-Betreibern blockiert wird.
+                    - Wir berücksichtigen Sicherheitsmaßnahmen, damit die Datenerfassung nicht von Website-Betreibern blockiert wird.
                   </p>
                 </div>
                 <div class="structure__buttons-wrapper">
                   <button class="structure__btn-mobile">3</button>
-                  <span class="structure__title">Bereitstellung und Support</span>
+                  <span class="structure__title">Bereitstellung und Betreuung</span>
                 </div>
                 <div class="structure__content-box-mobile">
-                  <h4 class="structure__content-box__title">Bereitstellung und Support</h4>
+                  <h4 class="structure__content-box__title">Bereitstellung und Betreuung</h4>
                   <p class="structure__content-box__text">
-                    - Wir stellen Ihnen die von Ihnen gewünschten Daten zur Verfügung.
-                    - Wir bieten Ihnen die Möglichkeit, den Abzug regelmäßig zu wiederholen, wenn die Informationen (z.B. Preise) auf der Website ständig aktualisiert werden.
-                    - Wir bieten Ihnen auch die Möglichkeit, die gesammelten Daten auszuwerten und tiefergehend zu analysieren, um einen noch größeren Mehrwert zu schaffen. Schauen Sie sich unseren Bereich <a href="#">Data Science und Machine Learning</a> an.
+                    - Wir stellen Ihnen die von Ihnen gewünschten Daten zur Verfügung. <br>
+                    - Wir bieten Ihnen die Möglichkeit, den Abzug regelmäßig zu wiederholen, wenn die Informationen (z.B. Preise) auf der Website ständig aktualisiert werden.<br>
+                    - Wir bieten Ihnen auch die Möglichkeit, die gesammelten Daten auszuwerten und tiefergehend zu analysieren, um einen noch größeren Mehrwert zu schaffen. Schauen Sie sich unseren Bereich <a href="../Data Science und Machine Learning/index.html"> Data Science und Machine Learning</a> an.
                   </p>
                 </div>
               </div>
@@ -383,7 +369,7 @@
             </a>
             <ul class="footer__sosial-list">
               <li class="menu-list">
-                <a href="#" class="menu-list__link"
+                <a href="tel:+491781986035" class="menu-list__link"
                   ><img src="../images/phone.svg" alt="" class="icon" /> +49
                   (178) 198 60 35</a
                 >
@@ -410,15 +396,15 @@
                 <a href="../index.html" class="menu-list__link">Home</a>
               </li>
               <li class="menu-list">
-                <a href="../Design/index.html" class="menu-list__link">Design & Webentwicklung</a>
+                <a href="../design/index.html" class="menu-list__link">Design & Webentwicklung</a>
               </li>
               <li class="menu-list">
-                <a href="../Data Science und Machine Learning/index.html" class="menu-list__link"
+                <a href="../data-science/index.html" class="menu-list__link"
                   >Data Science & Machine Learning</a
                 >
               </li>
               <li class="menu-list">
-                <a href="../Web Scraping/index.html" class="menu-list__link">Web Scraping</a>
+                <a href="../web-scraping/index.html" class="menu-list__link">Web Scraping</a>
               </li>
             </ul>
           </div>

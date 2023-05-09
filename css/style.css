@@ -1,6 +1,10 @@
+@import url("fonts.css");
+  
 :root {
   --swiper-navigation-size: 24px;
+  
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -86,25 +90,6 @@ body.popup-open {
   /* padding-bottom: 28px; */
 }
 
-@font-face {
-  font-family: "Gilroy";
-  src: url("../fonts/Gilroy-Regular.ttf") format("truetype");
-  font-style: normal;
-  font-weight: 300;
-}
-
-@font-face {
-  font-family: "Gilroy";
-  src: url("../fonts/Gilroy-Medium.ttf") format("truetype");
-  font-style: normal;
-  font-weight: 500;
-}
-@font-face {
-  font-family: "Gilroy";
-  src: url("../fonts/Gilroy-Bold.ttf") format("truetype");
-  font-style: normal;
-  font-weight: 700;
-}
 .container {
   max-width: 1000px;
   margin: 0 auto;
@@ -148,19 +133,24 @@ body.popup-open {
   font-weight: 300;
   font-size: 16px;
   color: #2b2c4b;
+
+
 }
 .list__item a {
   color: #2b2c4b;
-  transition: color 0.3s ease;
+  transition: color 0.2s ease;
+  
 }
 
 .list__item a:hover,
-.menu-list a:hover
-/* ,.list__item .active  */
+.menu-list a:hover,
+.list__item a.active
 {
   color: #ef8723;
   text-decoration: underline;
+
 }
+
 
 .burger {
   display: none;
@@ -191,17 +181,13 @@ body.popup-open {
 
 /*************************MAIN******************/
 
-.main-scrin,
 .main-scrin-design {
+  background-image: url("../images/main-design.jpg");
   width: 100vw;
-  /* background-image: url("../images/main.jpg"); */
+  height: calc(100vh - 200px);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-}
-
-.main-scrin-design {
-  background-image: url("../images/main-design.jpg");
 }
 
 
@@ -257,7 +243,7 @@ body.popup-open {
   transform: scale(1.01);
 }
 
-.main__title {
+.main__title, .main__title-service {
   font-family: "Gilroy", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -268,6 +254,10 @@ body.popup-open {
   color: rgb(255, 255, 255);
   position: relative;
   display: none;
+
+}
+.main__title-service {
+display: block;
 
 }
 .title {
@@ -513,6 +503,7 @@ z-index: 30;
   line-height: 29px;
   padding: 18px 0px 9px;
   color: #000000;
+  cursor: pointer;
 }
 
 .tab-btn.active {
@@ -615,7 +606,7 @@ z-index: 30;
   max-width: 850px;
   margin: 16px auto 32px;
 }
-.project-text a, .text-for-personal button {
+.project-text a, .text-for-personal button, .structure__content-box__text a {
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 500;
@@ -623,7 +614,7 @@ z-index: 30;
   line-height: 24px;
   text-decoration-line: underline;
   color: #ef8723;
-  border:none
+  border:none;
 } 
 .content-box {
   margin-top: 24px;
@@ -648,6 +639,7 @@ z-index: 30;
     line-height: 16px;
     padding: 18px 0px 9px;
     color: #000000;
+    
   }
   .project-wrapper {
     flex-wrap: wrap;
@@ -764,6 +756,10 @@ z-index: 30;
 
 
 /******************** TEAM ***********************/
+
+.about-service {
+  margin: 100px 0 0;
+}
 .team__title, .about-service__title {
   padding-bottom: 48px;
 }
@@ -1047,6 +1043,7 @@ padding: 32px 0 16px;
 
 .design-services {
   width: 100%;
+  overflow: hidden;
   
 }
 
@@ -1214,6 +1211,7 @@ position: relative;
 z-index: 4;
 box-shadow: inset -2px -2px 2px #585BB8, inset 2px 2px 2px #7E80DF;
 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+cursor: pointer;
 }
 
 .structure__content-box, .structure__content-box-wrapper, .structure__content-box-mobile {
@@ -1246,6 +1244,7 @@ padding-left: 20px;
 .structure__buttons-wrapper {
   display: flex;
   align-items: center;
+
 }
 
 .structure__content-box__title {
@@ -1296,6 +1295,7 @@ height: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
  
@@ -1311,6 +1311,7 @@ height: 20px;
   right: -10px;
   z-index: 2;
 }
+
 
 .structure__mobile {
   background-image: url("../images/line-mobile_str.svg");

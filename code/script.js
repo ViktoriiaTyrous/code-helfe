@@ -1,25 +1,21 @@
+const navLinks = document.querySelectorAll('.list__item a');
+const navLinksActive = document.querySelector('.list__item a.active');
 
-// let video = document.getElementById("myVideo");
-// let videoButton = document.getElementById("video-button");
-// let videoText = document.getElementById("videoBtn-text");
 
-// videoButton.addEventListener("click", function() {
-//   if (video.muted) {
-//     video.play();
-//     video.muted = false;
-//     videoButton.querySelector('.buttons__btn-video__icon').src = './images/video-pause.svg';
-//     videoButton.querySelector('.buttons__btn-video__icon').src = '../images/video-pause.svg';
-//     videoText.innerHTML = "Videos stoppen";
-//   } else {
-//     video.pause();
-//     video.muted = true;
-//     videoButton.querySelector('.buttons__btn-video__icon').src = './images/video.svg';
-//     videoButton.querySelector('.buttons__btn-video__icon').src = '../images/video.svg';
-//     videoText.innerHTML = "Video abspielen"
-//   }
+  navLinks.forEach(link => {
+    link.addEventListener('mouseover', () => {
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+      });
+     
+    });
+    link.addEventListener('mouseout', () => {
+      navLinks.forEach(link => {
+        navLinksActive.classList.add('active');
+      });
+    });
+  });
   
-// });
-
 let popup = document.getElementById("popup");
 let closeButton = document.getElementById("close-button");
 let body = document.getElementsByTagName("body")[0];
