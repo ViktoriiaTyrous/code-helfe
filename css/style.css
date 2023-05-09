@@ -262,7 +262,7 @@ display: block;
 
 }
 .title {
-  font-family: Gilroy, sans-serif;
+  font-family: "Gilroy", sans-serif;
   font-weight: 700;
   font-size: 48px;
   line-height: 48px;
@@ -1008,7 +1008,6 @@ color: #A3A3A3 ;
 }
 
 .button-form.error {
-  /* додати стилі для кнопки з помилкою */
   background-color: red;
   color: white;
   border-color: red;
@@ -1797,6 +1796,7 @@ height: 20px;
   .container {
     max-width: 550px;
   }
+
   .main__title {
     font-family: "Gilroy", sans-serif;
     font-style: normal;
@@ -1814,6 +1814,7 @@ height: 20px;
     line-height: 42px;
     color: #15162f;
     max-width: 320px;
+    padding-bottom: 28px;
   }
 
   .circle {
@@ -1834,6 +1835,9 @@ height: 20px;
   #personal {
     top: 478px;
     right: 42px;
+  }
+  .projects-block__title {
+    padding-top: 100px;
   }
 }
 @media screen and (max-width: 540px) {
@@ -1868,7 +1872,7 @@ height: 20px;
   }
   .about-content__title {
     padding-bottom: 25px;
-    padding-top: 498px;
+    padding-top: 550px;
   }
   .text-for-personal {
     bottom: -119px;
