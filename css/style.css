@@ -206,7 +206,6 @@ body.popup-open {
 
 
 .buttons__btn-video {
-  background: none;
   color: #ef8723;
   text-decoration: underline;
   border: none;
@@ -218,7 +217,13 @@ body.popup-open {
   gap: 8px;
   position: absolute;
   bottom: 30px;
-  left: 0;
+  left: 10px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 100px;
+  padding: 6px 12px 6px 6px;
+}
+.buttons__btn-video img {
+  width: 32px;
 }
 
 .buttons__btn-contact a {
@@ -1334,6 +1339,7 @@ height: 20px;
   font-size: 16px;
   font-weight: 300;
   line-height: 22px;
+  padding: 0 10px;
 }
 
 

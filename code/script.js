@@ -252,12 +252,23 @@ personalBtn.addEventListener('click', function() {
 });
 
 let video = document.getElementById("myVideo");
-let videoButton = document.querySelector(".buttons__btn-video");
+let videoButton = document.getElementById("video-button");
+let videoText = document.getElementById("videoBtn-text")
 
 videoButton.addEventListener("click", function() {
-  if (video.muted) {
+  if (video.paused) {
+    video.play();
     video.muted = false;
+    videoButton.querySelector('.buttons__btn-video__icon').src = './images/video.svg';
+    videoText.innerHTML = "Videos stoppen";
   } else {
+    video.pause();
     video.muted = true;
+    videoButton.querySelector('.buttons__btn-video__icon').src = './images/video-pause.svg';
+    videoText.innerHTML = "Video abspielen"
   }
+  
 });
+
+
+
