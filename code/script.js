@@ -1,20 +1,18 @@
-const navLinks = document.querySelectorAll('.list__item a');
-const navLinksActive = document.querySelector('.list__item a.active');
+const navLinks = document.querySelectorAll(".list__item a");
+const navLinksActive = document.querySelector(".list__item a.active");
 
-
-  navLinks.forEach(link => {
-    link.addEventListener('mouseover', () => {
-      navLinks.forEach(link => {
-        link.classList.remove('active');
-      });
-     
-    });
-    link.addEventListener('mouseout', () => {
-      navLinks.forEach(link => {
-        navLinksActive.classList.add('active');
-      });
+navLinks.forEach((link) => {
+  link.addEventListener("mouseover", () => {
+    navLinks.forEach((link) => {
+      link.classList.remove("active");
     });
   });
+  link.addEventListener("mouseout", () => {
+    navLinks.forEach((link) => {
+      navLinksActive.classList.add("active");
+    });
+  });
+});
 
 let popup = document.getElementById("popup");
 let closeButton = document.getElementById("close-button");
@@ -34,12 +32,11 @@ closeButton.onclick = hidePopup;
 const element = document.querySelector(".js-choice");
 const choices = new Choices(element, {
   searchEnabled: false,
-  shouldSort: false
+  shouldSort: false,
 });
 
-
 var swiper = new Swiper(".mySwiper_1", {
-  slidesPerView: 'auto',
+  slidesPerView: "auto",
   spaceBetween: 30,
   slidesPerGroup: 3,
   loop: false,
@@ -100,7 +97,6 @@ var swiper = new Swiper(".mySwiper_2", {
   },
 });
 
-
 const categorySelect = document.querySelector("#project-category");
 const contentBoxes = document.querySelectorAll(".content-box");
 
@@ -133,7 +129,6 @@ tabs.forEach((tab, index) => {
   });
 });
 
-
 document.addEventListener("click", documentClick);
 
 function documentClick(e) {
@@ -159,18 +154,13 @@ btn.addEventListener("click", function () {
   }
 });
 
-
-
-
-
-
 const anim = lottie;
 anim.loadAnimation({
   container: document.querySelector("#lottie_1"),
   render: "svg",
   loop: true,
   autoplay: true,
-  path: "./animation/prana_02.json",
+  path: "/animation/prana_02.json",
 });
 anim.loadAnimation({
   container: document.querySelector("#lottie_2"),
@@ -205,7 +195,7 @@ anim.loadAnimation({
   render: "svg",
   loop: true,
   autoplay: true,
-  path: "../animation/prana_02.json",
+  path: "/animation/prana_02.json",
 });
 anim.loadAnimation({
   container: document.querySelector("#lottie_8"),
@@ -264,14 +254,12 @@ anim.loadAnimation({
   path: "../animation/mobile_de.json",
 });
 
-
-
-let personalBtn = document.querySelector('.personal-btn');
-personalBtn.addEventListener('click', function() {
-  let textForPersonal = document.querySelector('.text-for-personal');
-  if (textForPersonal.classList.contains('active')) {
-    textForPersonal.classList.remove('active');
+let personalBtn = document.querySelector(".personal-btn");
+personalBtn.addEventListener("click", function () {
+  let textForPersonal = document.querySelector(".text-for-personal");
+  if (textForPersonal.classList.contains("active")) {
+    textForPersonal.classList.remove("active");
   } else {
-    textForPersonal.classList.add('active');
+    textForPersonal.classList.add("active");
   }
 });

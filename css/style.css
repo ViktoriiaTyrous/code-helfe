@@ -1155,6 +1155,7 @@ max-width: 100%;
 
 .about-service__image-block {
   max-width: 300px;
+  width: 100%;
   display: flex;
   position: relative;
   height: 350px;
