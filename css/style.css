@@ -1155,13 +1155,26 @@ max-width: 100%;
 }
 
 .about-service__image-block {
-  max-width: 320px;
+  max-width: 300px;
   display: flex;
-  align-items: center;
-  height: 400px;
+  position: relative;
+
 }
-.about-service__image-block img {
-  width: 100%;
+.about-service__image-block__cat{
+  max-width: 240px;
+  max-height: 320px;
+  position: absolute;
+  bottom: 5px;
+  right: -10px;
+}
+
+.about-service__image-block__laptop {
+  position: absolute;
+  z-index: 2;
+  right: 50px;
+  bottom: 0;
+  max-width: 270px;
+
 }
 .about-service__text {
   max-width: 550px;
