@@ -1151,10 +1151,12 @@ max-width: 100%;
   
 }
 
+
 .about-service__image-block {
   max-width: 300px;
   display: flex;
   position: relative;
+  height: 350px;
 
 }
 .about-service__image-block__cat{
