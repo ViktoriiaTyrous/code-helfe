@@ -59,19 +59,18 @@
                         <h2 class="form__block__title title" id="contact">Lass uns zusammen arbeiten</h2>
                         <form class="form" action="" onsubmit="return validateForm(event)">
                             <label for="name">Vollständiger Name*</label>
-                            <input class="input" type="text" name="name" id="name" placeholder="Name">
-                            <div class="error" id="name-error"></div>
+                            <input class="input" type="text" id="name" name="name" placeholder="Name">
+                            <div class="error name-error" id="name-error"></div>
                             <label for="phone">Nummer*</label>
-                            <input class="input" name="phone" id="phone" type="tel" placeholder="+49 179 5959 595">
-                            <div class="error" id="phone-error"></div>
+                            <input class="input" id="phone" type="tel" name="phone" placeholder="+49 179 5959 595">
+                            <div class="error phone-error" id="phone-error"></div>
                             <label for="email">E-Mail*</label>
-                            <input class="input" name="email" id="email" type="email" placeholder="example@mail.de">
-                            <div class="error" id="email-error"></div>
+                            <input class="input" id="email" type="email" name="email" placeholder="example@mail.de">
+                            <div class="error email-error" id="email-error"></div>
                             <label for="comment">Kommentar</label>
-                            <input class="input" type="text" name="comment" id="comment" placeholder="Ihr Kommentar...">
-                            <button class="button-form button form-submit-btn" type="submit">Schicken</button>
-                          </form>
-                          
+                            <input class="input ignore" type="text" id="comment" name="comment" placeholder="Ihr Kommentar...">
+                            <button class="button-form button form-submit-btn" type="submit" id="submit-btn">Schicken</button>
+                          </form>  
                   </div>
                 </div>
                 <div class="container">  
