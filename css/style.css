@@ -144,7 +144,8 @@ body.popup-open {
 
 .list__item a:hover,
 .menu-list a:hover,
-.list__item a.active
+.list__item a.active,
+.footer__policy a
 {
   color: #ef8723;
   text-decoration: underline;
@@ -994,6 +995,7 @@ footer {
 .footer__policy {
  text-align: center;
 padding: 32px 0 16px;
+color: #A3A3A3 ;
 
 }
 
@@ -1357,6 +1359,19 @@ height: 20px;
   font-weight: 300;
   line-height: 22px;
   padding: 0 10px;
+}
+.data__container span {
+  display: block;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 15px;
+  line-height: 22px;
+}
+
+.data__list-item {
+  list-style: disc;
+  margin-left: 20px;
+  padding: 5px;
 }
 
 
