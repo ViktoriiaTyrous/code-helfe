@@ -15,7 +15,7 @@ const navLinksActive = document.querySelector('.list__item a.active');
       });
     });
   });
-  
+
 let popup = document.getElementById("popup");
 let closeButton = document.getElementById("close-button");
 let body = document.getElementsByTagName("body")[0];
@@ -34,106 +34,7 @@ closeButton.onclick = hidePopup;
 const element = document.querySelector(".js-choice");
 const choices = new Choices(element, {
   searchEnabled: false,
-});
-
-const anim = lottie;
-anim.loadAnimation({
-  container: document.querySelector("#lottie_1"),
-  render: "svg",
-  loop: true,
-  autoplay: true,
-  path: "./animation/prana_02.json",
-});
-anim.loadAnimation({
-  container: document.querySelector("#lottie_2"),
-  render: "svg",
-  loop: true,
-  autoplay: true,
-  path: "./animation/01.json",
-});
-anim.loadAnimation({
-  container: document.querySelector("#lottie_6"),
-  render: "svg",
-  loop: true,
-  autoplay: true,
-  path: "./animation/Musse_002.json",
-});
-anim.loadAnimation({
-  container: document.querySelector("#lottie_3"),
-  render: "svg",
-  loop: true,
-  autoplay: true,
-  path: "./animation/old.json",
-});
-anim.loadAnimation({
-  container: document.querySelector("#lottie_9"),
-  render: "svg",
-  loop: true,
-  autoplay: true,
-  path: "./animation/new.json",
-});
-anim.loadAnimation({
-  container: document.querySelector("#lottie_7"),
-  render: "svg",
-  loop: true,
-  autoplay: true,
-  path: "../animation/prana_02.json",
-});
-anim.loadAnimation({
-  container: document.querySelector("#lottie_8"),
-  render: "svg",
-  loop: true,
-  autoplay: true,
-  path: "../animation/01.json",
-});
-anim.loadAnimation({
-  container: document.querySelector("#lottie_10"),
-  render: "svg",
-  loop: true,
-  autoplay: true,
-  path: "../animation/Musse_002.json",
-});
-anim.loadAnimation({
-  container: document.querySelector("#lottie_11"),
-  render: "svg",
-  loop: true,
-  autoplay: true,
-  path: "../animation/old.json",
-});
-anim.loadAnimation({
-  container: document.querySelector("#lottie_12"),
-  render: "svg",
-  loop: true,
-  autoplay: true,
-  path: "../animation/new.json",
-});
-anim.loadAnimation({
-  container: document.querySelector("#lottie_13"),
-  render: "svg",
-  loop: true,
-  autoplay: true,
-  path: "./animation/mobile_de.json",
-});
-anim.loadAnimation({
-  container: document.querySelector("#lottie_14"),
-  render: "svg",
-  loop: true,
-  autoplay: true,
-  path: "./animation/mobile_de.json",
-});
-anim.loadAnimation({
-  container: document.querySelector("#lottie_15"),
-  render: "svg",
-  loop: true,
-  autoplay: true,
-  path: "../animation/mobile_de.json",
-});
-anim.loadAnimation({
-  container: document.querySelector("#lottie_16"),
-  render: "svg",
-  loop: true,
-  autoplay: true,
-  path: "../animation/mobile_de.json",
+  shouldSort: false
 });
 
 
@@ -260,6 +161,111 @@ btn.addEventListener("click", function () {
 
 
 
+
+
+
+const anim = lottie;
+anim.loadAnimation({
+  container: document.querySelector("#lottie_1"),
+  render: "svg",
+  loop: true,
+  autoplay: true,
+  path: "./animation/prana_02.json",
+});
+anim.loadAnimation({
+  container: document.querySelector("#lottie_2"),
+  render: "svg",
+  loop: true,
+  autoplay: true,
+  path: "./animation/01.json",
+});
+anim.loadAnimation({
+  container: document.querySelector("#lottie_6"),
+  render: "svg",
+  loop: true,
+  autoplay: true,
+  path: "./animation/Musse_002.json",
+});
+anim.loadAnimation({
+  container: document.querySelector("#lottie_3"),
+  render: "svg",
+  loop: true,
+  autoplay: true,
+  path: "./animation/old.json",
+});
+anim.loadAnimation({
+  container: document.querySelector("#lottie_9"),
+  render: "svg",
+  loop: true,
+  autoplay: true,
+  path: "./animation/new.json",
+});
+anim.loadAnimation({
+  container: document.querySelector("#lottie_7"),
+  render: "svg",
+  loop: true,
+  autoplay: true,
+  path: "../animation/prana_02.json",
+});
+anim.loadAnimation({
+  container: document.querySelector("#lottie_8"),
+  render: "svg",
+  loop: true,
+  autoplay: true,
+  path: "../animation/01.json",
+});
+anim.loadAnimation({
+  container: document.querySelector("#lottie_10"),
+  render: "svg",
+  loop: true,
+  autoplay: true,
+  path: "../animation/Musse_002.json",
+});
+anim.loadAnimation({
+  container: document.querySelector("#lottie_11"),
+  render: "svg",
+  loop: true,
+  autoplay: true,
+  path: "../animation/old.json",
+});
+anim.loadAnimation({
+  container: document.querySelector("#lottie_12"),
+  render: "svg",
+  loop: true,
+  autoplay: true,
+  path: "../animation/new.json",
+});
+anim.loadAnimation({
+  container: document.querySelector("#lottie_13"),
+  render: "svg",
+  loop: true,
+  autoplay: true,
+  path: "./animation/mobile_de.json",
+});
+anim.loadAnimation({
+  container: document.querySelector("#lottie_14"),
+  render: "svg",
+  loop: true,
+  autoplay: true,
+  path: "./animation/mobile_de.json",
+});
+anim.loadAnimation({
+  container: document.querySelector("#lottie_15"),
+  render: "svg",
+  loop: true,
+  autoplay: true,
+  path: "../animation/mobile_de.json",
+});
+anim.loadAnimation({
+  container: document.querySelector("#lottie_16"),
+  render: "svg",
+  loop: true,
+  autoplay: true,
+  path: "../animation/mobile_de.json",
+});
+
+
+
 let personalBtn = document.querySelector('.personal-btn');
 personalBtn.addEventListener('click', function() {
   let textForPersonal = document.querySelector('.text-for-personal');
@@ -269,8 +275,3 @@ personalBtn.addEventListener('click', function() {
     textForPersonal.classList.add('active');
   }
 });
-
-
-
-
-
