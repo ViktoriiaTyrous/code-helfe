@@ -918,6 +918,7 @@ label {
   border-bottom: 2px solid rgb(99, 103, 199);
   background: none;
   max-width: 400px;
+  font-size: 16px;
 }
 
 .button-form,
@@ -1592,6 +1593,9 @@ height: 20px;
   .container-about {
     margin: 0 auto;
   }
+  .design-services__img {
+    background-image:none;
+}
 }
 @media screen and (max-width: 740px) {
   .choices {
