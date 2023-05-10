@@ -33,7 +33,7 @@ a {
 #myVideo {
   width: 100%;
   height: auto;
-  margin-top: 50px;
+  margin-top: 70px;
   display: block;
 
 
@@ -1640,6 +1640,12 @@ height: 20px;
   padding: 18px 0px 18px;
 
 }
+.line-bg {
+  top: 227px;
+}
+.title {
+  max-width: 433px;
+}
 
 }
 @media screen and (max-width: 740px) {
@@ -1681,6 +1687,10 @@ height: 20px;
     padding-bottom: 80px;
     padding-top: 645px;
   }
+  .title {
+    max-width: 521px;
+}
+  
 }
 @media screen and (max-width: 710px) {
   .circle {
@@ -1900,6 +1910,10 @@ height: 20px;
     align-items: center;
     justify-content: center;
 }
+.main__title, .main__title-service {
+  font-size: 50px;
+  line-height: 54px;
+}
   
 }
 @media screen and (max-width: 540px) {
@@ -2017,9 +2031,9 @@ height: 20px;
     position: absolute;
   }
   .main__title {
-    font-size: 46px;
+    font-size: 43px;
     line-height: 48px;
-}
+  }
 .buttons__btn-video {
   padding: 4px 30px 4px 4px;
 }

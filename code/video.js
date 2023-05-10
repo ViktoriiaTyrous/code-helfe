@@ -1,6 +1,9 @@
 let video = document.getElementById("myVideo");
 let videoButton = document.getElementById("video-button");
 let videoText = document.getElementById("videoBtn-text");
+let backgroundImage = document.querySelector(".main-scrin");
+let title = document.querySelector(".main__title");
+let btnWrapp = document.querySelector(".buttons__btn-video__wrapper");
 
 videoButton.addEventListener("click", function() {
   if (video.muted) {
@@ -12,9 +15,13 @@ videoButton.addEventListener("click", function() {
     video.pause();
     video.muted = true;
     videoButton.querySelector('.buttons__btn-video__icon').src = './images/video.svg';
-    videoText.innerHTML = "Video abspielen"
+    videoText.innerHTML = "Video abspielen";
+    backgroundImage.style.background = "none";
+    backgroundImage.style.height = "auto";
+    title.style.display = "none";
+    video.style.display = "block";
+    btnWrapp.style.bottom= "-20px"
 
   }
-
 });
 
