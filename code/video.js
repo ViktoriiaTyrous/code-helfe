@@ -17,12 +17,12 @@ videoButton.addEventListener("click", function() {
     video.muted = true;
     videoButton.querySelector('.buttons__btn-video__icon').src = './images/video.svg';
     videoText.innerHTML = "Video abspielen";
-   
+    backgroundImage.style.background = "none";
+    backgroundImage.style.height = "auto";
+    title.style.display = "none";
+    btnWrapp.style.bottom= "-20px";
+
   }
-  backgroundImage.style.background = "none";
-  backgroundImage.style.height = "auto";
-  title.style.display = "none";
-  btnWrapp.style.bottom= "-20px";
  
 });
 
