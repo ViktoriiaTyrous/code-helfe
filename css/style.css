@@ -1842,6 +1842,7 @@ height: 20px;
     background-image: url("../images/main-bg-mobile_small.jpg");
     width: 100%;
     height: 100vh;
+    background-size: cover;
   }
   .buttons__btn-video__wrapper {
     position: absolute;
