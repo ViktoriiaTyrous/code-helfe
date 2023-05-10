@@ -1834,9 +1834,9 @@ height: 20px;
     flex-direction: column;
   }
   #myVideo {
-    display: block;
+    display: none;
     position: absolute;
-    top: -200px;
+
   }
   .main-scrin {
     background-image: url("../images/main-bg-mobile_small.jpg");
