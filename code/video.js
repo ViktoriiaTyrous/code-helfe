@@ -22,7 +22,6 @@ videoButton.addEventListener("click", function() {
   backgroundImage.style.background = "none";
   backgroundImage.style.height = "auto";
   title.style.display = "none";
- 
   btnWrapp.style.bottom= "-20px"
 });
 
