@@ -1892,7 +1892,8 @@ height: 20px;
     flex-direction: row;
     align-content: center;
     flex-wrap: nowrap;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
 }
   
 }
