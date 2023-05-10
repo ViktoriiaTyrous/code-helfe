@@ -9,7 +9,7 @@ videoButton.addEventListener("click", function() {
   if (video.muted) {
     video.play();
     video.muted = false;
-    videoButton.querySelector('.buttons__btn-video__icon').src = './images/video-pause.svg';
+    videoButton.querySelector('.buttons__btn-video__icon').src = '../images/video-pause.svg';
     video.style.display = "block";
     videoText.innerHTML = "Videos stoppen";
     backgroundImage.style.background = "none";
@@ -19,7 +19,7 @@ videoButton.addEventListener("click", function() {
   } else {
     video.pause();
     video.muted = true;
-    videoButton.querySelector('.buttons__btn-video__icon').src = './images/video.svg';
+    videoButton.querySelector('.buttons__btn-video__icon').src = '../images/video.svg';
     videoText.innerHTML = "Video abspielen";
    
   }
