@@ -1320,7 +1320,7 @@ height: 20px;
 
 
 .structure__mobile {
-  background-image: url("../images/line-mobile_str.svg");
+  background-image: url("../images/line-mobile-str.svg");
   background-repeat: no-repeat;
   background-position:50%;
 }
@@ -1345,6 +1345,7 @@ height: 20px;
 .structure__content-wrap-mobile  .structure__title {
   text-align: center;
   padding: 12px;
+  
 }
 
 .structure__content-box-mobile {
