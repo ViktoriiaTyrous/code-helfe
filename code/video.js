@@ -7,7 +7,7 @@ videoButton.addEventListener("click", function() {
     video.play();
     video.muted = false;
     videoButton.querySelector('.buttons__btn-video__icon').src = './images/video-pause.svg';
-    videoContainer.style.display = "block";
+    video.style.display = "block";
   } else {
     video.pause();
     video.muted = true;
