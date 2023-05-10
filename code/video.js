@@ -10,6 +10,7 @@ videoButton.addEventListener("click", function() {
     video.play();
     video.muted = false;
     videoButton.querySelector('.buttons__btn-video__icon').src = './images/video-pause.svg';
+    video.style.display = "block";
     videoText.innerHTML = "Videos stoppen";
   } else {
     video.pause();
@@ -21,7 +22,7 @@ videoButton.addEventListener("click", function() {
   backgroundImage.style.background = "none";
   backgroundImage.style.height = "auto";
   title.style.display = "none";
-  video.style.display = "block";
+ 
   btnWrapp.style.bottom= "-20px"
 });
 
