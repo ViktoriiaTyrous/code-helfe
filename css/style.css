@@ -1348,9 +1348,13 @@ height: 20px;
   width: 70%;
 }
 
-/* #myVideo.close {
+#myVideo.close {
   display: none;
-} */
+}
+
+#myVideo.open {
+  display: block;
+}
 
 /****************DATA********************/
 

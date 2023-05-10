@@ -7,6 +7,7 @@ videoButton.addEventListener("click", function() {
     video.play();
     video.muted = false;
     videoButton.querySelector('.buttons__btn-video__icon').src = './images/video-pause.svg';
+    video.classList.add(".open");
     
 
     videoText.innerHTML = "Videos stoppen";
@@ -14,8 +15,8 @@ videoButton.addEventListener("click", function() {
     video.pause();
     video.muted = true;
     videoButton.querySelector('.buttons__btn-video__icon').src = './images/video.svg';
-    videoText.innerHTML = "Video abspielen"
+  
   }
-  video.style = "display:none"
+  video.classList.add(".close");
   
 });
