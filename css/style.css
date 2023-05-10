@@ -254,6 +254,7 @@ body.popup-open {
   width: 885px;
   color: rgb(255, 255, 255);
   position: relative;
+  display: none;
 
 }
 .main__title-service {
@@ -1402,7 +1403,6 @@ height: 20px;
     line-height: 42px;
     color: #15162f;
     max-width: 320px;
-    padding: 28px;
 }
 .projects-block__title {
   padding-top: 100px;
@@ -1640,10 +1640,7 @@ height: 20px;
 
 }
 @media screen and (max-width: 740px) {
-  .main__title {
-    padding-top: 60%;
-    max-width: 100%;
-}
+
   .choices {
     z-index: 10;
     display: block;
@@ -1737,7 +1734,7 @@ height: 20px;
     max-width: 100%;
   }
   .main__title, .main__title-service {
-    font-size: 62px;
+    font-size: 58px;
   
 }
 .title {
@@ -1815,6 +1812,11 @@ height: 20px;
   .container {
     max-width: 580px;
   }
+  .main__title {
+    padding-top: 200px;
+    max-width: 100%;
+    display: block;
+}
   .footer-contant {
     display: flex;
     flex-direction: column;
