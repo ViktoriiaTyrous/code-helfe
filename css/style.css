@@ -254,7 +254,6 @@ body.popup-open {
   width: 885px;
   color: rgb(255, 255, 255);
   position: relative;
-  display: none;
 
 }
 .main__title-service {
@@ -1831,10 +1830,17 @@ height: 20px;
   .buttons__btn-video__wrapper {
     position: absolute;
     z-index: 3;
-    top: 500px;
-    width: 250px;
+    bottom: -130px;
+    left: 0px;
+    width: 350px;
+}
 
+  .buttons__btn-video {
+    padding: 6px 40px 6px 6px;
   }
+  .buttons__btn-video img {
+    width: 48px;
+}
 
 }
 
