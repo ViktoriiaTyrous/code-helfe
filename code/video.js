@@ -14,6 +14,6 @@ videoButton.addEventListener("click", function() {
     videoButton.querySelector('.buttons__btn-video__icon').src = './images/video.svg';
   
   }
-  videoContainer.style.display = "none";
+
 });
 
