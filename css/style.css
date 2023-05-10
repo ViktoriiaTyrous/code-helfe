@@ -960,11 +960,6 @@ h5 {
   height: 60px;
 }
 
-.menu-list__link {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
 .menu-list__link img {
   width: 24px;
   height: 24px;
@@ -982,9 +977,12 @@ h5 {
   font-family: "Gilroy", sans-serif;
   font-weight: 300;
   font-size: 16px;
-  padding: 4px 0px;
   line-height: 22px;
   color: #2b2c3b;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 8px;
 }
 
 footer {
@@ -1377,6 +1375,7 @@ height: 20px;
 
 
 @media screen and (max-width: 925px) {
+
   .container,
   .header__container {
     max-width: 780px;
@@ -1384,15 +1383,16 @@ height: 20px;
   .container {
     max-width: 780px;
   }
+  .main-scrin-design{
+    background-image: url("../images/main-bg-mobile.jpg");
+    background-size: cover;
+    height: 100vh;
+ 
+  }
   .main__title {
-    font-family: "Gilroy", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 73px;
-    line-height: 72px;
-    padding-top: 200px;
-    max-width: 600px;
-    color: #ffffff;
+    padding-top: 350px;
+    max-width: 650px;
+    
   }
   .title {
     font-family: "Gilroy", sans-serif;
@@ -1627,8 +1627,18 @@ height: 20px;
   .design-services__img {
     background-image:none;
 }
+.tab-btn {
+  line-height: 20px;
+  padding: 18px 0px 18px;
+
+}
+
 }
 @media screen and (max-width: 740px) {
+  .main__title {
+    padding-top: 60%;
+    max-width: 100%;
+}
   .choices {
     z-index: 10;
     display: block;
@@ -1721,16 +1731,15 @@ height: 20px;
   .input {
     max-width: 100%;
   }
-  .main__title {
-    font-family: "Gilroy", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 64px;
-    line-height: 68px;
-    padding-top: 200px;
-    max-width: 550px;
-    color: #ffffff;
-  }
+  .main__title, .main__title-service {
+    font-size: 62px;
+  
+}
+.title {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 700;
+  font-size: 46px;
+}
   .services-block__title {
     margin-left: 10%;
   }
@@ -1750,6 +1759,12 @@ height: 20px;
   }
 }
 @media screen and (max-width: 620px) {
+  .main-scrin-design{
+    background-image: url("../images/main-bg-mobile_small.jpg");
+    background-size: cover;
+    height: 100vh;
+ 
+  }
   #cat {
     height: 288px;
     left: -34px;
@@ -1781,6 +1796,14 @@ height: 20px;
     padding-bottom: 80px;
     padding-top: 500px;
   }
+  .footer__policy {
+    text-align: center;
+    padding: 32px 0 90px;
+    color: #A3A3A3;
+  }
+  .footer-contant {
+    padding-top: 29px;
+  }  
 }
 
 @media screen and (max-width: 600px) {
@@ -1791,32 +1814,33 @@ height: 20px;
     display: flex;
     flex-direction: column;
   }
+  video {
+    display: none;
+  }
+  .main-scrin {
+    background-image: url("../images/main-bg-mobile_small.jpg");
+    width: 100%;
+    height: 100vh;
+  }
+  .buttons__btn-video__wrapper {
+    position: absolute;
+    z-index: 3;
+    top: 500px;
+    width: 250px;
+
+  }
+
 }
 
 @media screen and (max-width: 565px) {
   .container {
     max-width: 550px;
   }
-
-  .main__title {
-    font-family: "Gilroy", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 49px;
-    line-height: 68px;
-    padding-top: 200px;
-    max-width: 400px;
-    color: #ffffff;
-  }
-  .title {
-    font-family: "Gilroy", sans-serif;
-    font-weight: 700;
-    font-size: 38px;
-    line-height: 42px;
-    color: #15162f;
-    max-width: 320px;
-    padding-bottom: 28px;
-  }
+.title {
+  font-size: 40px;
+  line-height: 48px;
+  max-width: 380px;
+}
 
   .circle {
     right: 260px;
@@ -1840,6 +1864,14 @@ height: 20px;
   .projects-block__title {
     padding-top: 100px;
   }
+  .footer__policy {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+}
+  
 }
 @media screen and (max-width: 540px) {
   .statistic__number {
@@ -1879,6 +1911,10 @@ height: 20px;
     bottom: -119px;
     right: 62px;
 }
+.list__item {
+  text-align: center;
+}
+
 }
 
 @media screen and (max-width: 495px) {
@@ -1909,6 +1945,7 @@ height: 20px;
   width: 100%;
 }
 }
+
 
 @media screen and (max-width: 420px) {
   .container {
@@ -1947,15 +1984,10 @@ height: 20px;
     position: absolute;
   }
   .main__title {
-    font-family: "Gilroy", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 46px;
-    padding-top: 200px;
-    max-width: 300px;
-    color: #ffffff;
-  }
+    font-size: 52px;
+    line-height: 54px;
+    
+}
   .main__buttons {
     display: flex;
     flex-wrap: wrap;
@@ -1965,10 +1997,9 @@ height: 20px;
     margin-left: 0px;
   }
   .list__item {
-    font-size: 20px;
-    padding: 16px 0px;
-    display: block;
-  }
+    font-size: 24px;
+    padding: 12px 0px;
+}
   .popup-wrap {
     display: block;
     padding: 30px;

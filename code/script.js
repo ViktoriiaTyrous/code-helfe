@@ -154,13 +154,15 @@ btn.addEventListener("click", function () {
   }
 });
 
+
+
 const anim = lottie;
 anim.loadAnimation({
   container: document.querySelector("#lottie_1"),
   render: "svg",
   loop: true,
   autoplay: true,
-  path: "/animation/prana_02.json",
+  path: "./animation/prana_02.json",
 });
 anim.loadAnimation({
   container: document.querySelector("#lottie_2"),
@@ -195,7 +197,7 @@ anim.loadAnimation({
   render: "svg",
   loop: true,
   autoplay: true,
-  path: "/animation/prana_02.json",
+  path: "../animation/prana_02.json",
 });
 anim.loadAnimation({
   container: document.querySelector("#lottie_8"),
