@@ -35,6 +35,8 @@ a {
   height: auto;
   margin-top: 50px;
   display: block;
+
+
 }
 
 body.popup-open {
@@ -1832,7 +1834,9 @@ height: 20px;
     flex-direction: column;
   }
   #myVideo {
-    display: none;
+    display: block;
+    position: absolute;
+    top: -200px;
   }
   .main-scrin {
     background-image: url("../images/main-bg-mobile_small.jpg");
