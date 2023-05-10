@@ -1001,7 +1001,7 @@ color: #A3A3A3 ;
 .footer__policy a {
   color: #A3A3A3;
   text-decoration: underline;
-  padding: 8px 16px;
+  padding: 2px 8px;
   font-size: 16px;
   font-weight: 300;
 }
@@ -1759,6 +1759,11 @@ height: 20px;
     padding: 18px 0px 9px;
     color: #000000;
   }
+  .main__title {
+    padding-top: 350px;
+    max-width: 580px;
+    
+  }
 }
 @media screen and (max-width: 620px) {
   .main-scrin-design{
@@ -1806,6 +1811,11 @@ height: 20px;
   .footer-contant {
     padding-top: 29px;
   }  
+
+  .main__title {
+    padding-top: 350px;
+    max-width: 460px;
+}
 }
 
 @media screen and (max-width: 600px) {
@@ -1814,7 +1824,6 @@ height: 20px;
   }
   .main__title {
     padding-top: 200px;
-    max-width: 100%;
     display: block;
 }
   .footer-contant {
@@ -1932,6 +1941,10 @@ height: 20px;
 }
 
 @media screen and (max-width: 495px) {
+  .main__title {
+    padding-top: 219px;
+    max-width: 320px;
+}
   #rating {
     top: 384px;
     /* right: 320px; */
@@ -2069,6 +2082,10 @@ height: 20px;
   
 }
 @media screen and (max-width: 360px) {
+  .main__title {
+    padding-top: 200px;
+    max-width: 300px;
+}
   .service__item-title {
     font-size: 18px;
     line-height: 24px;
