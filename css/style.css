@@ -616,6 +616,7 @@ z-index: 30;
   text-decoration-line: underline;
   color: #ef8723;
   border:none;
+  background: none;
 } 
 .content-box {
   margin-top: 24px;
@@ -1394,14 +1395,19 @@ height: 20px;
     max-width: 650px;
     
   }
+
   .title {
     font-family: "Gilroy", sans-serif;
     font-weight: 700;
-    font-size: 58px;
-    line-height: 60px;
+    font-size: 38px;
+    line-height: 42px;
     color: #15162f;
-    max-width: 550px;
-  }
+    max-width: 320px;
+    padding: 28px;
+}
+.projects-block__title {
+  padding-top: 100px;
+}
   #cat {
     position: absolute;
     bottom: 0px;
