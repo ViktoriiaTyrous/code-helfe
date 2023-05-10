@@ -34,6 +34,7 @@ a {
   width: 100%;
   height: auto;
   margin-top: 50px;
+  display: block;
 }
 
 body.popup-open {
@@ -1348,14 +1349,6 @@ height: 20px;
   width: 70%;
 }
 
-#myVideo.close {
-  display: none;
-}
-
-#myVideo.open {
-  display: block;
-}
-
 /****************DATA********************/
 
 .data__container {
@@ -1838,7 +1831,7 @@ height: 20px;
     display: flex;
     flex-direction: column;
   }
-  video {
+  #myVideo {
     display: none;
   }
   .main-scrin {
