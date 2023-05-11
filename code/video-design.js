@@ -1,20 +1,17 @@
-
-let video = document.getElementById("myVideo");
-let videoButton = document.getElementById("video-button");
-let videoText = document.getElementById("videoBtn-text");
-
 videoButton.addEventListener("click", function() {
   if (video.muted) {
     video.play();
     video.muted = false;
     videoButton.querySelector('.buttons__btn-video__icon').src = '../images/video-pause.svg';
-    videoText.innerHTML = "Videos stoppen";
-    
+    video.style.display = "block";
   } else {
     video.pause();
     video.muted = true;
     videoButton.querySelector('.buttons__btn-video__icon').src = '../images/video.svg';
-    videoText.innerHTML = "Video abspielen";
+    video.style.display = "none";
+    if (video.style.display === "none") {
+      videoButton.querySelector('.buttons__btn-video__icon').src = '../images/video.svg';
+    }
   }
 });
 
