@@ -595,6 +595,7 @@ display: block;
 .project-content__image img {
   width: 100%;
   max-width: 585px;
+  max-height: 320px;
 }
 
 .project-text {
