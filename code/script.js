@@ -180,42 +180,6 @@ btn.addEventListener("click", function () {
 
 // ANIMATION //
 let anim = lottie;
-
-anim.loadAnimation({
-  container: document.querySelector("#lottie_7"),
-  render: "svg",
-  loop: true,
-  autoplay: true,
-  path: "../animation/prana_02.json",
-});
-anim.loadAnimation({
-  container: document.querySelector("#lottie_8"),
-  render: "svg",
-  loop: true,
-  autoplay: true,
-  path: "../animation/01.json",
-});
-anim.loadAnimation({
-  container: document.querySelector("#lottie_10"),
-  render: "svg",
-  loop: true,
-  autoplay: true,
-  path: "../animation/Musse_002.json",
-});
-anim.loadAnimation({
-  container: document.querySelector("#lottie_11"),
-  render: "svg",
-  loop: true,
-  autoplay: true,
-  path: "../animation/old.json",
-});
-anim.loadAnimation({
-  container: document.querySelector("#lottie_12"),
-  render: "svg",
-  loop: true,
-  autoplay: true,
-  path: "../animation/new.json",
-});
 anim.loadAnimation({
   container: document.querySelector("#lottie_15"),
   render: "svg",
