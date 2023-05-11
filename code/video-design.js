@@ -1,4 +1,4 @@
-let video = document.getElementById("myVideo-design");
+let video = document.getElementById("#myVideo-design");
 let videoButton = document.getElementById("video-button");
 let videoText = document.getElementById("videoBtn-text");
 
