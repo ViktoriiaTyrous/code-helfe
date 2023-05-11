@@ -669,7 +669,7 @@ display: block;
   max-width: 640px;
   height: auto;
   position: absolute;
-  right: 30px;
+  right: 80px;
 }
 .about-container {
   position: relative;
@@ -709,19 +709,19 @@ display: block;
 
 #persent {
   top: 470px;
-  right: 888px;
+  right: 847px;
   width: 203px;
   z-index: 12;
 }
 
 #rating {
   top: 670px;
-  right: 827px;
+  right: 786px;
   z-index: 12;
 }
 
 .about-content__text {
-  max-width: 530px;
+  max-width: 600px;
   font-family: "Gilroy";
   font-weight: 300;
   font-size: 16px;
