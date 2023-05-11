@@ -1,4 +1,4 @@
-let video = document.getElementById("myVideo-design");
+let video = document.getElementById("myVideo");
 let videoButton = document.getElementById("video-button");
 let videoText = document.getElementById("videoBtn-text");
 
@@ -15,9 +15,7 @@ videoButton.addEventListener("click", function() {
     videoButton.querySelector('.buttons__btn-video__icon').src = "../images/video.svg";
   }
 });
-if (video.style.display === "none") {
-  videoButton.querySelector('.buttons__btn-video__icon').src = "../images/video.svg";
-}
+
 
 
 
