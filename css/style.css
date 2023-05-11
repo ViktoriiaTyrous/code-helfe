@@ -579,7 +579,8 @@ display: block;
 }
 
 .project-content__image {
-  max-width: 500px;
+  max-width: 585px;
+  width: 100%;
   position: relative;
   display: flex;
   justify-content: center;
