@@ -1401,6 +1401,7 @@ font-weight: 700;
 font-size: 48px;
 line-height: 54px;
 color: #272844;
+text-align: center;
 }
 .error-page {
   background-image: url("../images/paw.svg");
@@ -2042,6 +2043,7 @@ color: #272844;
   .container {
     max-width: 420px;
   }
+
   .circle {
     right: 200px;
   }
@@ -2115,6 +2117,10 @@ color: #272844;
   }
   .structure__content-box-mobile {
     width: 100%;
+}
+
+.error-page__title {
+  font-size: 28px;
 }
 
 }
