@@ -7,10 +7,12 @@ videoButtonDesign.addEventListener("click", function() {
     videoDesign.play();
     videoDesign.muted = false;
     videoButtonDesign.querySelector('.buttons__btn-video__icon').src = "./images/video-pause.svg";
+    videoText.innerHTML = "Videos stoppen";
 
   } else {
     videoDesign.pause();
     videoDesign.muted = true;
     videoButtonDesign.querySelector('.buttons__btn-video__icon').src = "./images/video.svg";
+    videoText.innerHTML = "Video abspielen";
   }
 });
