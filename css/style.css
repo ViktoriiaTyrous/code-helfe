@@ -1374,6 +1374,7 @@ background:#ffff;
 /*************404**********/
 .image-page-error {
   max-width: 600px;
+  width: 100%;
 }
 .eror-page__button{
   max-width: 250px;
