@@ -367,11 +367,11 @@ display: block;
   right: -168px;
   background: #EEF0F8;
   display: none;
-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-border-radius: 10px;
-transition: all 0.3s ease;
-font-size: 16px;
-z-index: 30;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  z-index: 30;
 
 }
 
@@ -459,10 +459,6 @@ z-index: 30;
   font-weight: 500;
   font-size: 18px;
   line-height: 22px;
-  /* identical to box height */
-
-  /* header/dark */
-
   color: #15162f;
 }
 

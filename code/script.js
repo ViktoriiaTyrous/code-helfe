@@ -1,3 +1,5 @@
+// NAVIGATION //
+
 const navLinks = document.querySelectorAll(".list__item a");
 const navLinksActive = document.querySelector(".list__item a.active");
 
@@ -14,6 +16,10 @@ navLinks.forEach((link) => {
   });
 });
 
+
+// POPUP //
+
+
 let popup = document.getElementById("popup");
 let closeButton = document.getElementById("close-button");
 let body = document.getElementsByTagName("body")[0];
@@ -27,13 +33,19 @@ function hidePopup() {
   popup.style.display = "none";
   body.classList.remove("popup-open");
 }
-//______________________________________________________//
+
 closeButton.onclick = hidePopup;
 const element = document.querySelector(".js-choice");
 const choices = new Choices(element, {
   searchEnabled: false,
   shouldSort: false,
 });
+
+
+
+
+// SLIDER TEAM//
+
 
 var swiper = new Swiper(".mySwiper_1", {
   slidesPerView: "auto",
@@ -79,6 +91,9 @@ var swiper = new Swiper(".mySwiper_1", {
   },
 });
 
+
+// SLIDER PROJECTS //
+
 var swiper = new Swiper(".mySwiper_2", {
   slidesPerView: 1,
   spaceBetween: 30,
@@ -96,6 +111,9 @@ var swiper = new Swiper(".mySwiper_2", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+
+// TABS PROJECTS //
 
 const categorySelect = document.querySelector("#project-category");
 const contentBoxes = document.querySelectorAll(".content-box");
@@ -129,6 +147,10 @@ tabs.forEach((tab, index) => {
   });
 });
 
+// BURGER MENU //
+
+
+
 document.addEventListener("click", documentClick);
 
 function documentClick(e) {
@@ -137,6 +159,8 @@ function documentClick(e) {
     document.body.classList.toggle("burger-open");
   }
 }
+
+// ABOUT TEXT BLOCK - READ MORE //
 
 const btn = document.getElementById("myBtn");
 btn.addEventListener("click", function () {
@@ -154,44 +178,9 @@ btn.addEventListener("click", function () {
   }
 });
 
+// ANIMATION //
+let anim = lottie;
 
-
-const anim = lottie;
-anim.loadAnimation({
-  container: document.querySelector("#lottie_1"),
-  render: "svg",
-  loop: true,
-  autoplay: true,
-  path: "./animation/prana_02.json",
-});
-anim.loadAnimation({
-  container: document.querySelector("#lottie_2"),
-  render: "svg",
-  loop: true,
-  autoplay: true,
-  path: "./animation/01.json",
-});
-anim.loadAnimation({
-  container: document.querySelector("#lottie_6"),
-  render: "svg",
-  loop: true,
-  autoplay: true,
-  path: "./animation/Musse_002.json",
-});
-anim.loadAnimation({
-  container: document.querySelector("#lottie_3"),
-  render: "svg",
-  loop: true,
-  autoplay: true,
-  path: "./animation/old.json",
-});
-anim.loadAnimation({
-  container: document.querySelector("#lottie_9"),
-  render: "svg",
-  loop: true,
-  autoplay: true,
-  path: "./animation/new.json",
-});
 anim.loadAnimation({
   container: document.querySelector("#lottie_7"),
   render: "svg",
@@ -228,20 +217,6 @@ anim.loadAnimation({
   path: "../animation/new.json",
 });
 anim.loadAnimation({
-  container: document.querySelector("#lottie_13"),
-  render: "svg",
-  loop: true,
-  autoplay: true,
-  path: "./animation/mobile_de.json",
-});
-anim.loadAnimation({
-  container: document.querySelector("#lottie_14"),
-  render: "svg",
-  loop: true,
-  autoplay: true,
-  path: "./animation/mobile_de.json",
-});
-anim.loadAnimation({
   container: document.querySelector("#lottie_15"),
   render: "svg",
   loop: true,
@@ -256,12 +231,3 @@ anim.loadAnimation({
   path: "../animation/mobile_de.json",
 });
 
-let personalBtn = document.querySelector(".personal-btn");
-personalBtn.addEventListener("click", function () {
-  let textForPersonal = document.querySelector(".text-for-personal");
-  if (textForPersonal.classList.contains("active")) {
-    textForPersonal.classList.remove("active");
-  } else {
-    textForPersonal.classList.add("active");
-  }
-});
