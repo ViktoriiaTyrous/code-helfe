@@ -2,7 +2,7 @@
 <g filter="url(#filter0_i_1074_421)">
 <rect x="315" y="791" width="791" height="4" transform="rotate(-90 315 791)" fill="#EEF0F8"/>
 </g>
-<rect y="614" width="629" height="177" fill="url(#paint0_linear_1074_421)"/>
+<rect y="705" width="629" height="86" fill="url(#paint0_linear_1074_421)"/>
 <defs>
 <filter id="filter0_i_1074_421" x="315" y="0" width="4" height="792" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
@@ -14,7 +14,7 @@
 <feColorMatrix type="matrix" values="0 0 0 0 0.561094 0 0 0 0 0.56636 0 0 0 0 0.7125 0 0 0 0.5 0"/>
 <feBlend mode="normal" in2="shape" result="effect1_innerShadow_1074_421"/>
 </filter>
-<linearGradient id="paint0_linear_1074_421" x1="314.5" y1="614" x2="314.5" y2="791" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint0_linear_1074_421" x1="314.5" y1="705" x2="314.5" y2="791" gradientUnits="userSpaceOnUse">
 <stop stop-color="white" stop-opacity="0"/>
 <stop offset="1" stop-color="white"/>
 </linearGradient>
