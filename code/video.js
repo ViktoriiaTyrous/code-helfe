@@ -16,6 +16,5 @@ videoButton.addEventListener("click", function() {
     videoText.innerHTML = "Video abspielen";
     video.style.display = "block";
   }
-  video.style.display = "none";
 });
 
