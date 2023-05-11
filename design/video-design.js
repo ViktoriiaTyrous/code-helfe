@@ -9,13 +9,10 @@ videoButton.addEventListener("click", function() {
     video.classList.add("play")
     videoButton.querySelector('.buttons__btn-video__icon').src = "../images/video-pause.svg";
     videoTextDesign.innerHTML = "Videos stoppen";
-  } 
-  else {
-    video.pause();
+  } else {
     video.classList.remove("play")
-    videoButton.querySelector('.buttons__btn-video__icon').src = "../images/video.svg";
-    videoTextDesign.innerHTML = "Video abspielen";
   }
+ 
 });
 
 
