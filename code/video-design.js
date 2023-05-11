@@ -1,3 +1,7 @@
+let video = document.getElementById("myVideo");
+let videoButton = document.getElementById("video-button");
+let videoText = document.getElementById("videoBtn-text");
+
 videoButton.addEventListener("click", function() {
   if (video.muted) {
     video.play();
