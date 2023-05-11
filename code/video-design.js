@@ -1,9 +1,9 @@
 let video = document.getElementById("myVideo");
 let videoButton = document.getElementById("video-button");
 let videoText = document.getElementById("videoBtn-text");
-let backgroundImage = document.querySelector(".main-scrin");
-let title = document.querySelector(".main__title");
-let btnWrapp = document.querySelector(".buttons__btn-video__wrapper");
+// let backgroundImage = document.querySelector(".main-scrin");
+// let title = document.querySelector(".main__title");
+// let btnWrapp = document.querySelector(".buttons__btn-video__wrapper");
 
 videoButton.addEventListener("click", function() {
   if (video.muted) {
