@@ -2121,12 +2121,8 @@ text-align: center;
   .structure__content-box-mobile {
     width: 100%;
 }
-
-.error-page__title {
-  font-size: 24px;
 }
 
-}
 @media screen and (max-width: 400px) {
   .about-circle {
     width: 540px;
