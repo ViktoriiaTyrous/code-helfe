@@ -6,11 +6,13 @@ videoButton.addEventListener("click", function() {
   if (video.muted) {
     video.play();
     video.muted = false;
+    video.classList.add("play")
     videoButton.querySelector('.buttons__btn-video__icon').src = "../images/video-pause.svg";
     videoTextDesign.innerHTML = "Videos stoppen";
   } 
   else {
     video.pause();
+    video.classList.remove("play")
     videoButton.querySelector('.buttons__btn-video__icon').src = "../images/video.svg";
     videoTextDesign.innerHTML = "Video abspielen";
   }

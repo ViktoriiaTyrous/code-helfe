@@ -1892,6 +1892,10 @@ text-align: center;
     display: none;
 
   }
+  #myVideo.play, #myVideo-design.play {
+    display: block;
+
+  }
   .main-scrin {
     background-image: url("../images/main-bg-mobile_small.jpg");
     width: 100%;
