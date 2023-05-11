@@ -2153,6 +2153,15 @@ height: 20px;
   .structure__content-wrap {
     display: none;
   }
+  .structure__content__title {
+    padding-top: 100px;
+    /* margin-left: auto; */
+    margin: 0 auto;
+    text-align: center;
+}
+.title {
+  max-width: 100%;
+}
   }
 
   @media screen and (max-width: 980px) {
