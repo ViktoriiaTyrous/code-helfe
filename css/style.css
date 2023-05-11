@@ -584,7 +584,6 @@ z-index: 30;
 
 .project-content__image {
   max-width: 500px;
-  max-height: 320px;
   position: relative;
   display: flex;
   justify-content: center;
@@ -645,10 +644,6 @@ z-index: 30;
     padding: 18px 0px 9px;
     color: #000000;
     
-  }
-  .project-wrapper {
-    flex-wrap: wrap;
-    gap: 15px;
   }
 }
 
@@ -987,7 +982,7 @@ h5 {
   display: flex;
   align-items: center;
   gap: 8px;
-  padding: 4px 8px;
+  padding: 4px 0px;
 }
 
 footer {
@@ -1407,7 +1402,7 @@ height: 20px;
     font-size: 38px;
     line-height: 42px;
     color: #15162f;
-    max-width: 320px;
+    max-width: 390px;
 }
 .projects-block__title {
   padding-top: 100px;
@@ -1830,6 +1825,10 @@ height: 20px;
   .main__title {
     padding-top: 350px;
     max-width: 460px;
+}
+.project-wrapper {
+  flex-wrap: wrap;
+  gap: 30px;
 }
 }
 
