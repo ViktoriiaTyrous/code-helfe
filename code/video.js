@@ -14,7 +14,7 @@ videoButton.addEventListener("click", function() {
     video.muted = true;
     videoButton.querySelector('.buttons__btn-video__icon').src = './images/video.svg';
     videoText.innerHTML = "Video abspielen";
-    video.style.display = "block";
+    video.style.display = "none";
   }
 });
 
