@@ -1626,6 +1626,14 @@ color: #272844;
 
 }
 }
+@media screen and (max-width: 840px) {
+  .about-content__wrap {
+    max-width: 640px;
+    height: auto;
+    position: absolute;
+    right: 0px;
+}
+  }
 @media screen and (max-width: 820px) {
   .services-contant {
     max-width: 650px;
@@ -1863,9 +1871,7 @@ color: #272844;
   flex-wrap: wrap;
   gap: 30px;
 }
-.about-content__wrap {
-  right: 0px;
-}
+
 }
 
 @media screen and (max-width: 600px) {
