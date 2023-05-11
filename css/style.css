@@ -1888,7 +1888,7 @@ text-align: center;
     display: flex;
     flex-direction: column;
   }
-  #myVideo, #myVide-design {
+  #myVideo, #myVideo-design {
     display: none;
 
   }
