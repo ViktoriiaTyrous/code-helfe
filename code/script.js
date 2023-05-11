@@ -180,18 +180,6 @@ btn.addEventListener("click", function () {
 
 // ANIMATION //
 let anim = lottie;
-anim.loadAnimation({
-  container: document.querySelector("#lottie_15"),
-  render: "svg",
-  loop: true,
-  autoplay: true,
-  path: "../animation/mobile_de.json",
-});
-anim.loadAnimation({
-  container: document.querySelector("#lottie_16"),
-  render: "svg",
-  loop: true,
-  autoplay: true,
-  path: "../animation/mobile_de.json",
-});
+
+
 
