@@ -1,8 +1,6 @@
 let video = document.getElementById("myVideo");
 let videoButton = document.getElementById("video-button");
 let videoText = document.getElementById("videoBtn-text");
-video.style.display = "none";
-
 
 videoButton.addEventListener("click", function() {
   if (video.muted) {
@@ -13,7 +11,6 @@ videoButton.addEventListener("click", function() {
   } else {
     video.pause();
     video.muted = true;
-    video.style.display = "none";
     videoButton.querySelector('.buttons__btn-video__icon').src = "./images/video.svg";
   }
 });
