@@ -1237,9 +1237,7 @@ font-weight: 500;
 font-size: 18px;
 line-height: 24px;
 width: 200px;
-
 display: block;
-padding-left: 20px;
 
 }
 .structure__buttons-wrapper {
@@ -1343,9 +1341,11 @@ height: 20px;
   background: #ffffff;
 }
 
-.structure__content-wrap-mobile  .structure__title {
+.structure__content-wrap-mobile .structure__title {
   text-align: center;
-  padding: 12px 12px 10px;
+  margin: 12px 12px 20px;
+  padding: 0px 12px;
+
   
 }
 
