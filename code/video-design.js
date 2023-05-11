@@ -20,7 +20,7 @@ videoButton.addEventListener("click", function() {
    
   }
 });
-
+video.style.display = "none";
 
 
 

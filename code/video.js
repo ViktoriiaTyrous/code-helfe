@@ -17,4 +17,5 @@ videoButton.addEventListener("click", function() {
     video.style.display = "none";
   }
 });
+video.style.display = "none";
 
