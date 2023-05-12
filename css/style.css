@@ -1892,7 +1892,7 @@ text-align: center;
     display: none;
 
   }
-  #myVideo.play, #myVideo-design.play {
+  #myVideo.hidden, #myVideo-design.hidden {
     display: block;
 
   }
