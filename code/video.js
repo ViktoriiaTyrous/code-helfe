@@ -6,7 +6,7 @@ videoButton.addEventListener('click', function () {
   if (video.paused) {
     video.play();
     if (window.innerWidth < 600){
-      video.style.display = "none";
+      video.style.display = "block";
     } else {
       video.style.display = "block";
     videoText.innerHTML = "Video abspielen";
