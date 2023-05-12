@@ -27,7 +27,7 @@ videoButton.addEventListener('click', function () {
 true);
 if (video.muted == true) {
   videoText.innerHTML = "Video abspielen";
-}
+} else
 videoText.innerHTML = "Videos stoppen";
 
 
