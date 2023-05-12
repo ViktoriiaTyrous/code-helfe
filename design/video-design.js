@@ -9,26 +9,23 @@ videoButton.addEventListener('click', function () {
       video.style.display = "block"
       videoText.innerHTML = "Video abspielen";
       videoButton.querySelector('.buttons__btn-video__icon').src = "../images/video.svg";
+      
     
   } else if (video.muted) {
-    video.play();
-    video.style.display = "none"
-    video.muted = false;
-    videoText.innerHTML = "Video abspielen";
-    videoButton.querySelector('.buttons__btn-video__icon').src = "../images/video.svg";
-    
+    video.pause();
+    video.muted = true;
+    video.style.display = "block";
+    videoButton.querySelector('.buttons__btn-video__icon').src = "../images/video-pause.svg";
+    videoText.innerHTML = "Videos stoppen";
   } else 
-  video.pause();
-  video.muted = true;
-  video.style.display = "block";
-  videoButton.querySelector('.buttons__btn-video__icon').src = "../images/video-pause.svg";
-  videoText.innerHTML = "Videos stoppen";
+  video.play();
+  video.style.display = "none"
+  video.muted = false;
+  videoText.innerHTML = "Video abspielen";
+  videoButton.querySelector('.buttons__btn-video__icon').src = "../images/video.svg";
 },
 true);
-if (video.muted == true) {
-  videoText.innerHTML = "Video abspielen";
-} else
-videoText.innerHTML = "Videos stoppen";
+
 
 
 
