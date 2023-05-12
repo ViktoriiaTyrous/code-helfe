@@ -1,33 +1,33 @@
-let video = document.getElementById("myVideo");
-let videoButton = document.getElementById("video-button");
-let videoText = document.getElementById("videoBtn-text");
+const videoDes = document.getElementById("myVideo");
+const videoButtonDes = document.getElementById("video-button");
+const videoTextDes = document.getElementById("videoBtn-text");
 
-videoButton.addEventListener('click', function () {
-  if (video.paused) {
-    video.play();
+videoButtonDes.addEventListener('click', function () {
+  if (videoDes.paused) {
+    videoDes.play();
     if (window.innerWidth < 600){
-      video.style.display = "none";
+      videoDes.style.display = "none";
     } else {
-      video.style.display = "block";
-    videoText.innerHTML = "Video abspielen";
-    videoButton.querySelector('.buttons__btn-video__icon').src = "../images/video.svg";  
+      videoDes.style.display = "block";
+    videoTextDes.innerHTML = "Video abspielen";
+    videoButtonDes.querySelector('.buttons__btn-video__icon').src = "../images/video.svg";  
   }
   } else if (video.muted) {
-    video.pause();
-    video.muted = true;
+    videoDes.pause();
+    videoDes.muted = true;
     if (window.innerWidth < 600){
-      video.style.display = "none";
+      videoDes.style.display = "none";
     } else {
-      video.style.display = "block";
-      videoButton.querySelector('.buttons__btn-video__icon').src = "../images/video-pause.svg";
-      videoText.innerHTML = "Videos stoppen";
+      videoDes.style.display = "block";
+      videoButtonDes.querySelector('.buttons__btn-video__icon').src = "../images/video-pause.svg";
+      videoTextDes.innerHTML = "Videos stoppen";
     }
-   
-  } else {
-    video.pause();
-    video.muted = false;
-    videoText.innerHTML = "Video abspielen";
-    videoButton.querySelector('.buttons__btn-video__icon').src = "../images/video.svg";
+  } 
+  else {
+    videoDes.pause();
+    videoDes.muted = false;
+    videoTextDes.innerHTML = "Video abspielen";
+    videoButtonDes.querySelector('.buttons__btn-video__icon').src = "../images/video.svg";
   }
 });
 
