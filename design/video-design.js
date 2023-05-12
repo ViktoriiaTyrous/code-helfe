@@ -8,9 +8,7 @@ videoButton.addEventListener('click', function () {
       video.play();
       video.style.display = "block"
       videoText.innerHTML = "Video abspielen";
-      videoButton.querySelector('.buttons__btn-video__icon').src = "../images/video.svg";
-      
-    
+      videoButton.querySelector('.buttons__btn-video__icon').src = "../images/video.svg";  
   } else if (video.muted) {
     video.pause();
     video.muted = true;
@@ -23,8 +21,7 @@ videoButton.addEventListener('click', function () {
   video.muted = false;
   videoText.innerHTML = "Video abspielen";
   videoButton.querySelector('.buttons__btn-video__icon').src = "../images/video.svg";
-},
-true);
+});
 
 
 
