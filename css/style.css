@@ -1891,13 +1891,13 @@ text-align: center;
     display: flex;
     flex-direction: column;
   }
-  #video {
+  #myVideo {
     display: none;
     position: absolute;
     top: -300px;
 
   }
-  #video .mobile {
+  #myVideo .mobile {
     display: none;
     position: absolute;
     top: -300px;
