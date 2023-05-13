@@ -6,7 +6,7 @@ videoButton.addEventListener('click', function () {
   if (video.paused) {
     video.play();
     if (window.innerWidth < 600){
-      videoDes.style.display = "none";
+      videoDes.style.display = "block";
       videoDes.style.top = "-300px";
       videoDes.style.position = "absolute";
       // videoDes.classList.add("mobile");
@@ -19,7 +19,7 @@ videoButton.addEventListener('click', function () {
     video.pause();
     video.muted = true;
     if (window.innerWidth < 600){
-      videoDes.style.display = "none";
+      videoDes.style.display = "block";
       videoDes.style.top = "-300px";
       videoDes.style.position = "absolute";
       // videoDes.classList.add("mobile");
