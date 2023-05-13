@@ -5,6 +5,7 @@ let videoText = document.getElementById("videoBtn-text");
 videoButton.addEventListener('click', function () {
   if (video.paused) {
     video.play();
+    video.muted = false;
     if (window.innerWidth < 600){
       video.style.display = "block";
       video.style.top = "-300px";
@@ -15,7 +16,7 @@ videoButton.addEventListener('click', function () {
       videoText.innerHTML = "Video abspielen";
       videoButton.querySelector('.buttons__btn-video__icon').src = "./images/video.svg";  
   }
-  } else if (video.muted) {
+  } else {
       video.pause();
       video.muted = true;
     if (window.innerWidth < 600){
