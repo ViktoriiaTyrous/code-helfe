@@ -7,8 +7,8 @@ videoButton.addEventListener('click', function () {
     video.play();
     if (window.innerWidth < 600){
       videoDes.style.display = "block";
-      videoDes.style.top = "-300px";
       videoDes.style.position = "absolute";
+      videoDes.style.top = "-300px";
       // videoDes.classList.add("mobile");
     } else {
       video.style.display = "block";
@@ -20,8 +20,8 @@ videoButton.addEventListener('click', function () {
     video.muted = true;
     if (window.innerWidth < 600){
       videoDes.style.display = "block";
-      videoDes.style.top = "-300px";
       videoDes.style.position = "absolute";
+      videoDes.style.top = "-300px";
       // videoDes.classList.add("mobile");
     } else {
       video.style.display = "block";
