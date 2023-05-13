@@ -1241,6 +1241,7 @@ font-size: 18px;
 line-height: 24px;
 width: 200px;
 display: block;
+padding-left: 10px;
 
 }
 .structure__buttons-wrapper {
