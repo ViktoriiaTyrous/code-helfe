@@ -7,8 +7,6 @@ function validateForm(event) {
   let isValid = true;
 
 
-
-
   errors.forEach((error) => {
     error.innerHTML = '';
     error.classList.remove('active');

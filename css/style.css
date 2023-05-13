@@ -30,7 +30,7 @@ a {
   gap: 8px;
   transition: all 0.3s ease;
 }
-#myVideo, #myVideo-design {
+#main-scrin__video {
   width: 100%;
   height: auto;
   margin-top: 70px;
@@ -1009,8 +1009,11 @@ color: #A3A3A3 ;
   border-color: red;
 }
 
-.phone.error-input,
+/* .phone.error-input,
 .name.error-input {
+  border-bottom: 2px solid rgb(176, 9, 9);
+} */
+.error .active .input {
   border-bottom: 2px solid rgb(176, 9, 9);
 }
 
@@ -1888,14 +1891,16 @@ text-align: center;
     display: flex;
     flex-direction: column;
   }
-  #myVideo, #myVideo-design {
+  #main-scrin__video {
     display: none;
     position: absolute;
     top: -300px;
 
   }
-  #myVideo.hidden, #myVideo-design.hidden {
-    display: block;
+  #main-scrin__video .mobile {
+    display: none;
+    position: absolute;
+    top: -300px;
 
   }
   .main-scrin {

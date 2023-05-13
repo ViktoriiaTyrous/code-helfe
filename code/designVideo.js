@@ -1,4 +1,4 @@
-let video = document.getElementById("myVideo");
+let video = document.getElementById("main-scrin__video");
 let videoButton = document.getElementById("video-button");
 let videoText = document.getElementById("videoBtn-text");
 
@@ -6,9 +6,7 @@ videoButton.addEventListener('click', function () {
   if (video.paused) {
     video.play();
     if (window.innerWidth < 600){
-      video.style.display = "block";
-      video.style.top = "-300px";
-      video.style.position = "absolute";
+      video.classList.add("mobile");
     } else {
       video.style.display = "block";
     videoText.innerHTML = "Video abspielen";
@@ -18,9 +16,7 @@ videoButton.addEventListener('click', function () {
     video.pause();
     video.muted = true;
     if (window.innerWidth < 600){
-      video.style.display = "none";
-      video.style.top = "-300px";
-      video.style.position = "absolute";
+      video.classList.add("mobile");
     } else {
       video.style.display = "block";
       videoButton.querySelector('.buttons__btn-video__icon').src = "../images/video-pause.svg";
