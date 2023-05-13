@@ -9,6 +9,8 @@ videoButton.addEventListener('click', function () {
     video.play();
     if (window.innerWidth < 600){
       video.style.display = "block";
+      video.style.top = "-300px";
+      video.style.position = "absolute";
     } else {
       video.style.display = "block";
     videoText.innerHTML = "Video abspielen";
@@ -17,6 +19,8 @@ videoButton.addEventListener('click', function () {
   } else if (video.muted) {
     video.pause();
     video.muted = true;
+    video.style.top = "-300px";
+      video.style.position = "absolute";
     if (window.innerWidth < 600){
       video.style.display = "none";
     } else {
