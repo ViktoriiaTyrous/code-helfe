@@ -6,7 +6,10 @@ videoButton.addEventListener('click', function () {
   if (video.paused) {
     video.play();
     if (window.innerWidth < 600){
-      video.classList.add("mobile");
+      videoDes.style.display = "none";
+      videoDes.style.top = "-300px";
+      videoDes.style.position = "absolute";
+      // video.classList.add("mobile");
     } else {
       video.style.display = "block";
     videoText.innerHTML = "Video abspielen";
@@ -16,7 +19,10 @@ videoButton.addEventListener('click', function () {
     video.pause();
     video.muted = true;
     if (window.innerWidth < 600){
-      video.classList.add("mobile");
+      videoDes.style.display = "none";
+      videoDes.style.top = "-300px";
+      videoDes.style.position = "absolute";
+      // videoDes.classList.add("mobile");
     } else {
       video.style.display = "block";
       videoButton.querySelector('.buttons__btn-video__icon').src = "../images/video-pause.svg";
