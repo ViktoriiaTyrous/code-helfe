@@ -30,7 +30,7 @@ a {
   gap: 8px;
   transition: all 0.3s ease;
 }
-#main-scrin__video {
+#video {
   width: 100%;
   height: auto;
   margin-top: 70px;
@@ -1891,13 +1891,13 @@ text-align: center;
     display: flex;
     flex-direction: column;
   }
-  #main-scrin__video {
+  #video {
     display: none;
     position: absolute;
     top: -300px;
 
   }
-  #main-scrin__video .mobile {
+  #video .mobile {
     display: none;
     position: absolute;
     top: -300px;
