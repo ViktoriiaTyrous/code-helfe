@@ -1,6 +1,6 @@
 
 
-let video = document.getElementById("main-scrin__video");
+let video = document.getElementById("video");
 let videoButton = document.getElementById("video-button");
 let videoText = document.getElementById("videoBtn-text");
 
