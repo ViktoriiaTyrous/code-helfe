@@ -19,10 +19,10 @@ videoButton.addEventListener('click', function () {
   } else if (video.muted) {
     video.pause();
     video.muted = true;
-    video.style.top = "-300px";
-      video.style.position = "absolute";
     if (window.innerWidth < 600){
       video.style.display = "none";
+      video.style.top = "-300px";
+      video.style.position = "absolute";
     } else {
       video.style.display = "block";
       videoButton.querySelector('.buttons__btn-video__icon').src = "./images/video-pause.svg";
