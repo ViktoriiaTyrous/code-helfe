@@ -9,7 +9,7 @@ videoButton.addEventListener('click', function () {
       videoDes.style.display = "none";
       videoDes.style.top = "-300px";
       videoDes.style.position = "absolute";
-      // video.classList.add("mobile");
+      // videoDes.classList.add("mobile");
     } else {
       video.style.display = "block";
     videoText.innerHTML = "Video abspielen";
