@@ -1,36 +1,34 @@
-const videoDes = document.getElementById("myVideo");
-const videoButtonDes = document.getElementById("video-button");
-const videoTextDes = document.getElementById("videoBtn-text");
+let video = document.getElementById("myVideo");
+let videoButton = document.getElementById("video-button");
+let videoText = document.getElementById("videoBtn-text");
 
-videoButtonDes.addEventListener('click', function () {
-  if (videoDes.paused) {
-    videoDes.play();
+videoButton.addEventListener('click', function () {
+  if (video.paused) {
+    video.play();
     if (window.innerWidth < 600){
-      videoDes.style.display = "none";
-      videoDes.style.display = "none";
-      videoDes.style.top = "-300px";
-      videoDes.style.position = "absolute";
+      video.style.display = "block";
+      video.style.top = "-300px";
+      video.style.position = "absolute";
     } else {
-      videoDes.style.display = "block";
-    videoTextDes.innerHTML = "Video abspielen";
-    videoButtonDes.querySelector('.buttons__btn-video__icon').src = "../images/video.svg";  
+      video.style.display = "block";
+    videoText.innerHTML = "Video abspielen";
+    videoButton.querySelector('.buttons__btn-video__icon').src = "../images/video.svg";  
   }
   } else if (video.muted) {
-    videoDes.pause();
-    videoDes.muted = true;
+    video.pause();
+    video.muted = true;
     if (window.innerWidth < 600){
-      videoDes.style.display = "none";
-      videoDes.style.display = "none";
-      videoDes.style.top = "-300px";
-      videoDes.style.position = "absolute";
+      video.style.display = "none";
+      video.style.top = "-300px";
+      video.style.position = "absolute";
     } else {
-      videoDes.style.display = "block";
-      videoButtonDes.querySelector('.buttons__btn-video__icon').src = "../images/video-pause.svg";
-      videoTextDes.innerHTML = "Videos stoppen";
+      video.style.display = "block";
+      videoButton.querySelector('.buttons__btn-video__icon').src = "../images/video-pause.svg";
+      videoText.innerHTML = "Videos stoppen";
     }
-  } 
-});
 
+}
+});
 
 
 
