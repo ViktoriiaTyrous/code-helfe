@@ -30,7 +30,7 @@ a {
   gap: 8px;
   transition: all 0.3s ease;
 }
-#video {
+#myVideo {
   width: 100%;
   height: auto;
   margin-top: 70px;
