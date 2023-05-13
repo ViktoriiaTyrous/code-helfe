@@ -6,9 +6,9 @@ videoButton.addEventListener('click', function () {
   if (video.paused) {
     video.play();
     if (window.innerWidth < 600){
-      videoDes.style.display = "none";
-      videoDes.style.top = "-300px";
-      videoDes.style.position = "absolute";
+      video.style.display = "none";
+      video.style.top = "-300px";
+      video.style.position = "absolute";
       // video.classList.add("mobile");
     } else {
       video.style.display = "block";
@@ -19,9 +19,9 @@ videoButton.addEventListener('click', function () {
       video.pause();
       video.muted = true;
     if (window.innerWidth < 600){
-      videoDes.style.display = "none";
-      videoDes.style.top = "-300px";
-      videoDes.style.position = "absolute";
+      video.style.display = "none";
+      video.style.top = "-300px";
+      video.style.position = "absolute";
       // video.classList.add("mobile");
     } else {
       video.style.display = "block";
