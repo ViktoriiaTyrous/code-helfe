@@ -1,5 +1,3 @@
-
-
 let video = document.getElementById("video");
 let videoButton = document.getElementById("video-button");
 let videoText = document.getElementById("videoBtn-text");
