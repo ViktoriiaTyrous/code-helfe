@@ -1,6 +1,6 @@
 
-addEventListener("DOMContentLoaded", (event) => {
-  let video = document.getElementById("myVideo");
+
+let video = document.getElementById("myVideo");
 let videoButton = document.getElementById("video-button");
 let videoText = document.getElementById("videoBtn-text");
 
@@ -28,12 +28,6 @@ videoButton.addEventListener('click', function () {
       videoButton.querySelector('.buttons__btn-video__icon').src = "./images/video-pause.svg";
       videoText.innerHTML = "Videos stoppen";
     }
-   
-  } else {
-    video.pause();
-    video.muted = false;
-    videoText.innerHTML = "Video abspielen";
-    videoButton.querySelector('.buttons__btn-video__icon').src = "./images/video.svg";
-  }
-});
+
+}
 });

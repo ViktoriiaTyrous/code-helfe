@@ -7,6 +7,9 @@ videoButtonDes.addEventListener('click', function () {
     videoDes.play();
     if (window.innerWidth < 600){
       videoDes.style.display = "none";
+      videoDes.style.display = "none";
+      videoDes.style.top = "-300px";
+      videoDes.style.position = "absolute";
     } else {
       videoDes.style.display = "block";
     videoTextDes.innerHTML = "Video abspielen";
@@ -17,18 +20,15 @@ videoButtonDes.addEventListener('click', function () {
     videoDes.muted = true;
     if (window.innerWidth < 600){
       videoDes.style.display = "none";
+      videoDes.style.display = "none";
+      videoDes.style.top = "-300px";
+      videoDes.style.position = "absolute";
     } else {
       videoDes.style.display = "block";
       videoButtonDes.querySelector('.buttons__btn-video__icon').src = "../images/video-pause.svg";
       videoTextDes.innerHTML = "Videos stoppen";
     }
   } 
-  else {
-    videoDes.pause();
-    videoDes.muted = false;
-    videoTextDes.innerHTML = "Video abspielen";
-    videoButtonDes.querySelector('.buttons__btn-video__icon').src = "../images/video.svg";
-  }
 });
 
 
