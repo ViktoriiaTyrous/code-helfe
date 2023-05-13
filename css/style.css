@@ -1890,6 +1890,8 @@ text-align: center;
   }
   #myVideo, #myVideo-design {
     display: none;
+    position: absolute;
+    top: -300px;
 
   }
   #myVideo.hidden, #myVideo-design.hidden {
