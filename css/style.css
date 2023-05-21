@@ -1387,7 +1387,7 @@ height: 20px;
   max-width: 600px;
   width: 100%;
 }
-.eror-page__button{
+.error-page__button {
   max-width: 250px;
   margin-top: 60px;
 }
@@ -1396,7 +1396,6 @@ height: 20px;
   display:flex;
   flex-direction:column;
   align-items: center;
-  justify-content: center;
 }
 .error-page__title {
   font-family: 'Gilroy';
@@ -1412,6 +1411,101 @@ text-align: center;
   background-repeat: no-repeat;
   background-position: right;
 }
+/*******************THANK**************/
+
+.thank-page {
+  background-image: url("../images/thank-bg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  height: 100vh;
+  justify-content: space-between;
+  overflow: hidden;
+
+}
+.thank-page-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  padding: 170px 0 0;
+}
+.image-page-thank {
+width: 100%;
+}
+
+.thank-page__title {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 58px;
+  text-align: center;
+  color: #272844;
+}
+
+.thank-page__subtitle {
+  font-family: 'Gilroy';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 32px;
+text-align: center;
+color: #272844;
+max-width: 700px;
+padding: 28px 10px 44px;
+}
+.thank-page__button{
+  max-width: 250px;
+}
+@media screen and (min-height: 950px) {
+  .thank-page-content {
+    padding: 270px 0 0;
+}}
+@media screen and (max-width: 900px) {
+  .thank-page {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top right 35%;
+}
+.thank-page__title {
+  font-size: 48px;
+}
+}
+
+@media screen and (max-width: 500px) {
+
+  .thank-page__title {
+    font-size: 40px;
+    line-height: 44px;
+}
+
+.thank-page__subtitle {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+}
+@media screen and (max-width: 380px) {
+
+  .thank-page-content {
+    padding: 100px 0 0;
+}
+
+  .thank-page__title {
+    font-size: 36px;
+    line-height: 44px;
+}
+
+.thank-page__subtitle {
+  font-size: 16px;
+  line-height: 21px;
+  padding-bottom: 32px;
+}
+
+}
+
+
 @media screen and (max-width: 925px) {
 
   .container,
