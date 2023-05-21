@@ -70,6 +70,7 @@ function validateForm(event) {
     submitButton.classList.remove('disabled');
     submitButton.removeAttribute('disabled');
     form.submit();
+    form.reset();
   } else {
 
     submitButton.classList.add('disabled');
