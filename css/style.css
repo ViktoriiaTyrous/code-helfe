@@ -1325,7 +1325,7 @@ height: 20px;
 .structure__mobile {
   background-image: url("../images/line-mobile-str.svg");
   background-repeat: no-repeat;
-  background-position:50%;
+  background-position:51%;
 }
 .structure__content-wrap-mobile {
   max-width: 100%;
@@ -1396,6 +1396,7 @@ height: 20px;
   display:flex;
   flex-direction:column;
   align-items: center;
+  justify-content: center;
 }
 .error-page__title {
   font-family: 'Gilroy';
@@ -2101,7 +2102,7 @@ padding: 28px 10px 44px;
     padding-top: 550px;
   }
   .text-for-personal {
-    bottom: -119px;
+    bottom: -135px;
     right: 62px;
 }
 .list__item {
@@ -2287,6 +2288,9 @@ padding: 28px 10px 44px;
   .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
     max-width: 42px;
     width: 100%;
+}
+.project-content__image img {
+  max-height: auto;
 }
 }
 
