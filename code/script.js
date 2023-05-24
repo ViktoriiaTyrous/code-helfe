@@ -180,7 +180,17 @@ btn.addEventListener("click", function () {
 
 
 // FOOTER LINKS //
+function toggleFlag(event) {
+  event.preventDefault();
 
+  var flag = event.target.querySelector('.menu-list__soon-flag');
+  flag.classList.toggle('show');
+
+  setTimeout(function() {
+    flag.classList.remove('show');
+  }, 1200); 
+
+}
 
 // ANIMATION //
 let anim = lottie;
