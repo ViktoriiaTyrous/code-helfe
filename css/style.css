@@ -2042,6 +2042,9 @@ padding: 28px 10px 44px;
     width: 48px;
 }
 
+.menu-list__soon-flag {
+  right: 240px;
+}
 }
 
 @media screen and (max-width: 565px) {
