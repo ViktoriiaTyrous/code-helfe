@@ -23,7 +23,7 @@ a {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  z-index: 20;
+  z-index: 120;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -211,6 +211,7 @@ body.popup-open {
   background: rgba(255, 255, 255, 0.9);
   border-radius: 100px;
   padding: 6px 12px 6px 6px;
+  cursor: pointer;
 }
 .buttons__btn-video img {
   width: 32px;
@@ -963,13 +964,10 @@ h5 {
 .menu-list__link img {
   width: 24px;
   height: 24px;
-  transition: all 0.3s ease-in-out;
 }
 
 .menu-list__link:hover img {
   fill: #ef8723;
-  width: 25px;
-  height: 25px;
   box-sizing: border-box;
 }
 
@@ -983,7 +981,28 @@ h5 {
   align-items: center;
   gap: 8px;
   padding: 4px 0px;
+  position: relative;
+
 }
+
+.menu-list__soon-flag {
+position: absolute;
+right: -25px;
+top: -5px;
+color: #2b2d5a;
+font-size: 14px;
+line-height: 18px;
+background-color: #EEF0F8;
+padding: 2px 10px;
+border-radius: 12px;
+display: none;
+transition: all 0.1s ease;
+}
+
+.menu-list__soon-flag.show {
+  display: block;
+  }
+
 
 footer {
   width: 100%;
@@ -2013,6 +2032,7 @@ padding: 28px 10px 44px;
     bottom: -130px;
     left: 0px;
     width: 350px;
+
 }
 
   .buttons__btn-video {
