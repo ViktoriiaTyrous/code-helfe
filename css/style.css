@@ -987,8 +987,9 @@ h5 {
 
 .menu-list__soon-flag {
 position: absolute;
-right: -25px;
-top: -5px;
+left: 50px;
+top: -8px;
+max-width: 50px;
 color: #2b2d5a;
 font-size: 14px;
 line-height: 18px;
@@ -1001,6 +1002,7 @@ transition: all 0.1s ease;
 
 .menu-list__soon-flag.show {
   display: block;
+ 
   }
 
 
@@ -2043,7 +2045,7 @@ padding: 28px 10px 44px;
 }
 
 .menu-list__soon-flag {
-  right: 240px;
+  left: 60px;
 }
 }
 
