@@ -1384,7 +1384,7 @@ height: 20px;
 
 /*************404**********/
 .image-page-error {
-  max-width: 600px;
+  max-width: 500px;
   width: 100%;
 }
 .error-page__button {
@@ -2262,7 +2262,7 @@ padding: 28px 10px 44px;
 }
   
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 365px) {
   .main__title {
     padding-top: 200px;
     max-width: 300px;
@@ -2288,6 +2288,9 @@ padding: 28px 10px 44px;
   .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
     max-width: 42px;
     width: 100%;
+}
+.project-content__image img {
+  max-height: auto;
 }
 .project-content__image img {
   max-height: auto;
