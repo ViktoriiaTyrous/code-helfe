@@ -183,13 +183,13 @@ btn.addEventListener("click", function () {
 function toggleFlag(event) {
   event.preventDefault();
 
-  var flag = event.target.querySelector('.menu-list__soon-flag');
-  flag.classList.toggle('show');
+  let flag = document.querySelector('.menu-list__soon-flag');
+  flag.classList.add('show');
 
   setTimeout(function() {
     flag.classList.remove('show');
-  }, 1200); 
-
+  }, 2000); 
+ 
 }
 
 // ANIMATION //
