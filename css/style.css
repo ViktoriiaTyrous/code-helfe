@@ -2046,8 +2046,11 @@ padding: 28px 10px 44px;
     width: 48px;
 }
 
+
 .menu-list__soon-flag {
-  bottom: -30px;
+    top: -35px;
+    max-height: 22px;
+    left: 70px;
 }
 }
 
