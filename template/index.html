@@ -10,21 +10,54 @@
     <title>Templates</title>
 </head>
 <body>
+    <header class="header">
+        <div class="header__container">
+         <nav class="navigation">
+            <a href="../index.html" class="header__logo">
+                <img src="../images/logo.svg" alt="" class="logo-img">
+            </a>
+            <div class="menu-body">
+            <ul class="list">
+                <li class="list__item">
+                    <a href="../index.html" class="item__link active">Home</a>
+                </li>
+                <li class="list__item">
+                    <a href="../design/index.html" class="item__link">Design & Webentwicklung</a>
+                </li>
+                <li class="list__item">
+                    <a href="./data-science/index.html" class="item__link">Data Science & Machine Learning</a>
+                </li>
+                <li class="list__item">
+                    <a href="./web-scraping/index.html" class="item__link">Web Scraping</a>
+                </li>
+            </ul>
+        </div>
+            <button class="burger" type="button">
+                <span></span>
+            </button>
+         </nav>
+        </div>
+    </header>
     <section>
         <div class="templates">
-            <div class="container templates__container">
+            <div class="templates__container">
                 <h1 class="templates__title title">Start-Up Packet</h1>
                 <div class="templates__content first__block">
                     <h4>1. Zusammen mit dir wir</h4>
                     <ul class="templates__content__list">
-                        <li class="templates__content__list-item">bestimmen Webseitestruktur (bis zu 7 Blöcken: Über Produkt,  Mitarbeiter, Kundenrezensionen...)</li>
-                        <li class="templates__content__list-item">wählen den passenden Stil und das schöne Design aus</li>
-                        <li class="templates__content__list-item">legen geeignete Farben und Schriftarten fest</li>
+                        <li class="templates__content__list-item">
+                            <img src="../images/wareframe-templates.png" alt="">
+                            bestimmen Webseitestruktur (bis zu 7 Blöcken: Über Produkt,  Mitarbeiter, Kundenrezensionen...)</li>
+                        <li class="templates__content__list-item">
+                            <img src="../images/creative-design-designer-man-working.jpg" alt="">wählen den passenden Stil und das schöne Design aus</li>
+                        <li class="templates__content__list-item">
+                            <img src="../images/gray-desk-with-laptop-notepad-with-blank-sheet-pot-flower-stylus-tablet-retouching.jpg" alt="">legen geeignete Farben und Schriftarten fest</li>
                     </ul>
                 </div>
                 <img src="../images/OBJECTS.svg" alt="">
                 <div class="templates__content second__block">
                     <h4>2. Design und Entwicklung</h4>
+                    <img class="templates-img-gif" src="../images/dev.gif" alt="">
                 </div>
                 <img src="../images/OBJECTS.svg" alt="">
                 <div class="templates__content third__block">
@@ -48,7 +81,9 @@
                 <div class="templates__content">
                     <h4>5. Zusätzlich möglich</h4>
                     <ul class="templates__content__list">
-                        <li class="templates__content__list-item">animiertes Symbol deines Unternehmens</li>
+                        <li class="templates__content__list-item">
+                            <img src="../images/cat-serv.gif" alt="">
+                            animiertes Symbol deines Unternehmens</li>
                         <li class="templates__content__list-item">Promovideo für dein Produkt oder Unternehmen</li>
                         <li class="templates__content__list-item">Werbung und SEO-Optimierung</li>
                     </ul>
@@ -77,6 +112,78 @@
           </div>
         </div>
     </section>
+    <footer>
+        <div class="container">
+          <div class="footer-contant">
+            <div class="footer__information">
+              <a href="#" class="footer__logo">
+                <img src="../images/logo.svg" alt="" srcset="" />
+              </a>
+              <ul class="footer__sosial-list">
+                <li class="menu-list">
+                  <a href="tel:+491781986035" class="menu-list__link"
+                    ><img src="../images/phone.svg" alt="" class="icon" /> +49
+                    (178) 198 60 35</a
+                  >
+                </li>
+                <li class="menu-list">
+                  <a href="mailto:info@code-helfer.de" target="_blank" class="menu-list__link"
+                    ><img src="../images/email.svg" alt="" class="icon" />
+                    info@code-helfer.de</a
+                  >
+                </li>
+                <li class="menu-list">
+                <p class="menu-list__link"><img src="../images/location.svg" alt="" class="icon" />Schillerstr. 50, Heilbronn, 74072 </p>
+              
+                </li>
+              </ul>
+            </div>
+  
+            <div class="footer__menu">
+              <h5>Menu</h5>
+              <ul class="footer__munu-list">
+                <li class="menu-list">
+                  <a href="../index.html" class="menu-list__link">Home</a>
+                </li>
+                <li class="menu-list">
+                  <a href="../design/index.html" class="menu-list__link">Design & Webentwicklung</a>
+                </li>
+                <li class="menu-list">
+                  <a href="../data-science/index.html" class="menu-list__link"
+                    >Data Science & Machine Learning</a>
+                </li>
+                <li class="menu-list">
+                  <a href="../web-scraping/index.html" class="menu-list__link">Web Scraping</a>
+                </li>
+              </ul>
+            </div>
+  
+            <div class="footer__social">
+              <h5>Social</h5>
+              <ul class="footer__menu-list">
+                <li class="menu-list">
+                  <a href="#" class="menu-list__link" onclick="toggleFlag(event)">
+                    <img src="../images/linkedin.svg" alt="" class="icon" />
+                    LinkedIn</a>
+                </li>
+                <li class="menu-list">
+                  <a href="#" class="menu-list__link" onclick="toggleFlag(event)">
+                    <img src="../images/github.svg" alt="" class="icon" />
+                    GitHub</a>
+                </li>
+                <li class="menu-list">
+                  <a href="#" class="menu-list__link" onclick="toggleFlag(event)">
+                    <img src="../images/behance.svg" alt="" class="icon" />
+                    Behance</a>
+                </li>
+                <span class="menu-list__soon-flag">
+                    Link wird bald hinzugefügt</span>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__policy"><a href="../impressum/index.html" target="_blank">Impressum</a>|<a href="../datenschutz/index.html" target="_blank">Datenschutz</a></div>
+        </div>
+      </footer> 
     <script src="../code/script.js"></script>
 </body>
 </html>
