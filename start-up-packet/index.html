@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.svg">
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>start-up Packet</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+         <nav class="navigation">
+            <a href="../index.html" class="header__logo">
+                <img src="../images/logo.svg" alt="" class="logo-img">
+            </a>
+            <div class="menu-body">
+            <ul class="list">
+                <li class="list__item">
+                    <a href="../index.html" class="item__link">Home</a>
+                </li>
+                <li class="list__item">
+                    <a href="../design/index.html" class="item__link">Design & Webentwicklung</a>
+                </li>
+                <li class="list__item">
+                    <a href="../data-science/index.html" class="item__link">Data Science & Machine Learning</a>
+                </li>
+                <li class="list__item">
+                    <a href="../web-scraping/index.html" class="item__link">Web Scraping</a>
+                </li>
+            </ul>
+        </div>
+            <button class="burger" type="button">
+                <span></span>
+            </button>
+         </nav>
+        </div>
+    </header>
+    <section>
+        <div class="templates">
+          <a href="#head" id="fixedbutton"  onclick="showPopup()" class="button"> <img src="./images/jam_write-f.svg" alt="">Kontaktiere uns</a>
+            <div class="templates__container">
+                <h1 class="templates__title title">Start-Up Packet</h1>
+                <div class="templates__content first__block">
+                    <h4>1. Zusammen mit dir wir</h4>
+                    <ul class="templates__content__list">
+                        <li class="templates__content__list-item">
+                            <img src="../images/wareframe-template.png" alt="">
+                            bestimmen Webseitestruktur (bis zu 7 Blöcken: Über Produkt,  Mitarbeiter, Kundenrezensionen...)</li>
+                        <li class="templates__content__list-item">
+                            <img src="../images/style-template.png" alt="">wählen den passenden Stil und das schöne Design aus</li>
+                        <li class="templates__content__list-item">
+                            <img src="../images/color-template.png" alt="">legen geeignete Farben und Schriftarten fest</li>
+                    </ul>
+                </div>
+                <img src="../images/OBJECTS.svg" alt="">
+                <div class="templates__content second__block">
+                    <h4>2. Design und Entwicklung</h4>
+                    <img class="templates-img-gif additional" src="../images/dev.gif" alt="">
+                </div>
+                <img src="../images/OBJECTS.svg" alt="">
+                <div class="templates__content third__block">
+                    <h4>3. Zeitnah und preiswertig bekommst du</h4>
+                    <ul class="templates__content__list">
+                        <li class="templates__content__list-item">
+                          <img src="../images/website-hosting-concept-with-search-bar.jpg" alt="">
+                          benuterfreundliche und einzigartige Webseite</li>
+                        <li class="templates__content__list-item">
+                          <img src="../images/header-animation.gif" alt="">
+                          animierten Header, der die Kundenaufmerksamkeit weckt</li>
+                        <li class="templates__content__list-item">
+                          <img src="../images/contact-us-customer-service-support-concept.jpg" alt="">integriertes Kontaktformular</li>
+                    </ul>
+                </div>
+                <img src="../images/OBJECTS.svg" alt="">
+                <div class="templates__content content-images">
+                    <h4>4. Welche Webseite wollten die anderen haben?</h4>
+              <div class="content-image__box">     
+                <img src="../images/Services.jpg" alt="">
+                 <img src="../images/Company.jpg" alt="">
+                <img src="../images/Product.jpg" alt="">
+            </div>
+                </div>
+                <img src="../images/OBJECTS.svg" alt="">
+                <div class="templates__content">
+                    <h4>5. Zusätzlich möglich</h4>
+                    <ul class="templates__content__list">
+                        <li class="templates__content__list-item height-image">
+                            <img src="../images/cat-serv.gif" alt="">
+                            animiertes Symbol deines Unternehmens</li>
+                        <li class="templates__content__list-item">
+                          <img src="../images/promo-template.svg" alt="">
+                          Promovideo für dein Produkt oder Unternehmen</li>
+                        
+                        <li class="templates__content__list-item">
+                          <img src="../images/seo-template.svg" alt="">
+                          Werbung und SEO-Optimierung</li>
+                    </ul>
+            </div>
+            <button class="button templates-button" onclick="showPopup()">Los geht's</button>
+        </div>
+
+        <div id="popup" display = "none">
+            <div class="popup-wrap">
+                <button id="close-button"><img src="../images/pop-close.svg" alt="close"></button>
+                <h2 class="form__block__title title" id="contact">Lass uns zusammen arbeiten</h2>
+                <form class="form" action="mailer.php" method="POST" onsubmit="return validateForm(event)">
+                    <label for="name">Vollständiger Name*</label>
+                    <input class="input" type="text" id="name" name="name" placeholder="Name">
+                    <div class="error name-error" id="name-error"></div>
+                    <label for="phone">Nummer*</label>
+                    <input class="input" id="phone" type="tel" name="phone" placeholder="+49 179 5959 595">
+                    <div class="error phone-error" id="phone-error"></div>
+                    <label for="email">E-Mail*</label>
+                    <input class="input" id="email" type="email" name="email" placeholder="example@mail.de">
+                    <div class="error email-error" id="email-error"></div>
+                    <label for="comment">Kommentar</label>
+                    <input class="input ignore" type="text" id="comment" name="comment" placeholder="Ihr Kommentar...">
+                    <button class="button-form button form-submit-btn" type="submit" id="submit-btn">Schicken</button>
+                  </form>  
+          </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+          <div class="footer-contant">
+            <div class="footer__information">
+              <a href="#" class="footer__logo">
+                <img src="../images/logo.svg" alt="" srcset="" />
+              </a>
+              <ul class="footer__sosial-list">
+                <li class="menu-list">
+                  <a href="tel:+491781986035" class="menu-list__link"
+                    ><img src="../images/phone.svg" alt="" class="icon" /> +49
+                    (178) 198 60 35</a
+                  >
+                </li>
+                <li class="menu-list">
+                  <a href="mailto:info@code-helfer.de" target="_blank" class="menu-list__link"
+                    ><img src="../images/email.svg" alt="" class="icon" />
+                    info@code-helfer.de</a
+                  >
+                </li>
+                <li class="menu-list">
+                <p class="menu-list__link"><img src="../images/location.svg" alt="" class="icon" />Schillerstr. 50, Heilbronn, 74072 </p>
+              
+                </li>
+              </ul>
+            </div>
+  
+            <div class="footer__menu">
+              <h5>Menu</h5>
+              <ul class="footer__munu-list">
+                <li class="menu-list">
+                  <a href="../index.html" class="menu-list__link">Home</a>
+                </li>
+                <li class="menu-list">
+                  <a href="../design/index.html" class="menu-list__link">Design & Webentwicklung</a>
+                </li>
+                <li class="menu-list">
+                  <a href="../data-science/index.html" class="menu-list__link"
+                    >Data Science & Machine Learning</a>
+                </li>
+                <li class="menu-list">
+                  <a href="../web-scraping/index.html" class="menu-list__link">Web Scraping</a>
+                </li>
+              </ul>
+            </div>
+  
+            <div class="footer__social">
+              <h5>Social</h5>
+              <ul class="footer__menu-list">
+                <li class="menu-list">
+                  <a href="#" class="menu-list__link" onclick="toggleFlag(event)">
+                    <img src="../images/linkedin.svg" alt="" class="icon" />
+                    LinkedIn</a>
+                </li>
+                <li class="menu-list">
+                  <a href="#" class="menu-list__link" onclick="toggleFlag(event)">
+                    <img src="../images/github.svg" alt="" class="icon" />
+                    GitHub</a>
+                </li>
+                <li class="menu-list">
+                  <a href="#" class="menu-list__link" onclick="toggleFlag(event)">
+                    <img src="../images/behance.svg" alt="" class="icon" />
+                    Behance</a>
+                </li>
+                <span class="menu-list__soon-flag">
+                    Link wird bald hinzugefügt</span>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__policy"><a href="../impressum/index.html" target="_blank">Impressum</a>|<a href="../datenschutz/index.html" target="_blank">Datenschutz</a></div>
+        </div>
+      </footer> 
+    <script src="../code/script.js"></script>
+</body>
+</html>
